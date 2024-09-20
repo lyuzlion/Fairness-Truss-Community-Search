@@ -6,6 +6,7 @@ const int max_trussness = 1105;
 const int maxn = 320005;
 const int maxm = 1050005;
 const int maxa = 10;
+const int gamma = 1;
 
 struct HashTable
 {
@@ -103,9 +104,12 @@ struct edge_link
 
 struct Graph {
     vector<int> V;
-    vector<int> E[maxn];
+    unordered_set<int> E;
+    unordered_set<int> G[maxn];
+    unordered_map<int, int> trussness; // eid -> tau
+    unordered_set<pair<int, int> > triangles[maxm];
+    int query_dis = 0;
 };
-
 
 vector<int> G[maxn];
 int D[maxn];
