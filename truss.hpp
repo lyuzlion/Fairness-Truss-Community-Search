@@ -1,0 +1,170 @@
+#ifndef __TRUSS_HPP__
+#define __TRUSS_HPP__
+
+#include <bits/stdc++.h>
+#include "utils.hpp"
+using namespace std;
+
+struct edge
+{
+    int u, v;
+    int sup;
+    int trussness;
+    edge() : u(0), v(0), sup(0), trussness(0) {}
+} e[maxm];
+
+
+unordered_set<int> trussness_class[max_trussness];
+
+void truss_decomposition()
+{
+    int vertices_in_degree_decending_order[maxn];
+    for (int i = 1; i <= n; i++)
+        vertices_in_degree_decending_order[i] = i;
+
+    auto cmp = [](const int &v1, const int &v2) -> bool
+    {
+        return D[v1] != D[v2] ? D[v1] > D[v2] : v1 < v2;
+    };
+    sort(vertices_in_degree_decending_order + 1, vertices_in_degree_decending_order + n + 1, cmp);
+
+    unordered_set<int> A[maxn];
+
+    for (int i = 1; i <= n; i++)
+    {
+        int vertex = vertices_in_degree_decending_order[i];
+        for (const int &eid : G[vertex])
+        {
+            int v = e[eid].v ^ e[eid].u ^ vertex;
+            if (cmp(v, vertex))
+                continue;
+            for (const int &w : A[vertex])
+            {
+                if (A[v].count(w))
+                {
+                    e[eid].sup++;
+                    e[hash_table_1[1ll * v * n + w]].sup++;
+                    e[hash_table_1[1ll * vertex * n + w]].sup++;
+                }
+            }
+            A[v].insert(vertex);
+        }
+    }
+
+    bool removed_edges[maxm];
+    memset(removed_edges, 0, sizeof(removed_edges));
+
+    int cur_minimum_trussness = max_trussness, sub_minimum_trussness = max_trussness;
+
+    for (int i = 1; i <= m; i++)
+    {
+        trussness_class[e[i].sup + 2].insert(i);
+        if (e[i].sup < cur_minimum_trussness - 2)
+        {
+            sub_minimum_trussness = cur_minimum_trussness;
+            cur_minimum_trussness = e[i].sup + 2;
+        }
+    }
+    queue<int> q;
+
+    for (int i = 1; i <= m; i++)
+    {
+        if (e[i].sup == cur_minimum_trussness - 2)
+        {
+            q.push(i);
+            removed_edges[i] = true;
+            e[i].trussness = cur_minimum_trussness;
+        }
+    }
+    cur_minimum_trussness = sub_minimum_trussness;
+
+    while (!q.empty())
+    {
+        int u = e[q.front()].u, v = e[q.front()].v;
+        int eid_uv = hash_table_1[1ll * u * n + v];
+        hash_table_1.erase(1ll * v * n + u);
+        hash_table_1.erase(1ll * u * n + v);
+        e_link.erase((eid_uv - 1) << 1);
+        e_link.erase((eid_uv - 1) << 1 | 1);
+
+        q.pop();
+        for (int i = e_link.p[u]; ~i; i = e_link.e[i].next)
+        {
+            int eid = e_link.e[i].index_in_e;
+            if (removed_edges[eid])
+                continue;
+
+            int w = e_link.e[i].v;
+            if (w == v)
+                continue;
+
+            if (hash_table_1.count(1ll * v * n + w))
+            {
+                trussness_class[e[eid].sup + 2].erase(eid);
+                e[eid].sup--;
+                trussness_class[e[eid].sup + 2].insert(eid);
+
+                if (e[eid].sup <= e[eid_uv].trussness - 2 && !removed_edges[eid])
+                {
+                    removed_edges[eid] = true;
+                    e[eid].trussness = e[eid_uv].trussness;
+                    q.push(eid);
+                }
+            }
+        }
+        for (int i = e_link.p[v]; ~i; i = e_link.e[i].next)
+        {
+            int eid = e_link.e[i].index_in_e;
+            if (removed_edges[eid])
+                continue;
+
+            int w = e_link.e[i].v;
+            if (w == u)
+                continue;
+
+            if (hash_table_1.count(1ll * u * n + w))
+            {
+                trussness_class[e[eid].sup + 2].erase(eid);
+                e[eid].sup--;
+                trussness_class[e[eid].sup + 2].insert(eid);
+
+                if (e[eid].sup <= e[eid_uv].trussness - 2 && !removed_edges[eid])
+                {
+                    removed_edges[eid] = true;
+                    e[eid].trussness = e[eid_uv].trussness;
+                    q.push(eid);
+                }
+            }
+        }
+        if (q.empty())
+        {
+            for (int i = e[eid_uv].trussness + 1; i < max_trussness; i++)
+            {
+                if ((int)trussness_class[i].size() != 0)
+                {
+                    for (const int &eid : trussness_class[i])
+                    {
+                        q.push(eid);
+                        removed_edges[eid] = true;
+                        e[eid].trussness = i;
+                    }
+                    break;
+                }
+            }
+        }
+    }
+
+    for (int u = 1;u <= n;u++) {
+        for(const int & v : G[u]) {
+            int eid = hash_table_1[1ll * u + v];
+            tau[u] = max(tau[u], e[eid].trussness);
+        }
+    }
+    
+    for (int i = 1; i <= m; i++)
+    {
+        cout << e[i].u << ", " << e[i].v << "  " << e[i].trussness << ".\n";
+    }
+}
+
+#endif
