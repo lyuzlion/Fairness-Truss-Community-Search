@@ -1,12 +1,13 @@
 #ifndef __UTILS_HPP__
 #define __UTILS_HPP__
 #include <bits/stdc++.h>
+using namespace std;
 
 const int max_trussness = 1105;
-const int maxn = 320005;
+const int maxn = 520005;
 const int maxm = 1050005;
 const int maxa = 10;
-const int gamma = 1;
+int _gamma = 1;
 
 struct HashTable
 {
@@ -16,8 +17,8 @@ struct HashTable
         long long u;
         int v, next;
     };
-    data e[maxm << 3];
-    int h[maxm << 2], cnt;
+    data e[maxm << 5];
+    int h[maxm << 4], cnt;
 
     int hash(long long u) { return u < mod ? u : u % mod; }
 
@@ -78,6 +79,9 @@ struct edge_link
 
     void insert(int u, int v, int index_in_e)
     {
+        if (eid >= (maxm << 1)) {
+            assert(0);
+        }
         e[eid].v = v;
         e[eid].next = p[u];
         e[eid].pre = -1;
@@ -94,7 +98,7 @@ struct edge_link
         if (~e[cur_id].pre)
             e[e[cur_id].pre].next = e[cur_id].next;
     }
-
+    
     edge_link()
     {
         memset(p, -1, sizeof(p));
@@ -102,22 +106,62 @@ struct edge_link
     }
 };
 
+
+struct pair_hash{
+    template<class T1, class T2>
+    size_t operator () (const pair<T1, T2> & p) const{
+        auto h1 = hash<T1>()(p.first);
+        auto h2 = hash<T2>()(p.second);
+        return h1 ^ (h2 + 0x9e3779b9 + (h1 << 6) + (h1 >> 2));
+    }
+};
+
 struct Graph {
     vector<int> V;
     unordered_set<int> E;
-    unordered_set<int> G[maxn];
+    unordered_map<int, unordered_set<int>> G; // 存点u连出去的点，这里与最开始的原图存的不一样，原图存的是边的编号
     unordered_map<int, int> trussness; // eid -> tau
-    unordered_set<pair<int, int> > triangles[maxm];
+    unordered_map<int, unordered_set<pair<int, int>, pair_hash> > triangles;
     int query_dis = 0;
 };
 
-vector<int> G[maxn];
-int D[maxn];
+vector<int> G[maxn]; // 存原图每个点连出的边的编号
+int D[maxn]; // 存原图每个点的点度
 int n, m, F, q;
-HashTable hash_table_1;
+HashTable hash_table_1, hash_table_2;
 edge_link e_link;
 int tau[maxn]; // 存每个节点的tau值
-int phi[maxn];
+int phi[maxn]; // 存每个点的属性
 unordered_set<int> attr_set;
+
+bool vis[maxn];
+int attr_sum[maxa];
+int dis[maxn];
+
+map<string, pair<int, int> > data_info = {{"facebook_combined", {4039, 88234}}, {"DBLP", {317080, 1049866}}};
+
+int compute_diam(Graph &C) {
+    int diam = 0;
+    for(const int & w : C.V) {
+        // cerr << w << " ";
+        queue<int> que;
+        que.push(w);
+        memset(dis, 0x3f, sizeof(dis));
+        dis[w] = 0;
+        while(!que.empty()) { // 计算出每个点到查询点的距离
+            int u = que.front();
+            que.pop();
+            for(const int & v : C.G[u]) {
+                if(dis[v] == 0x3f3f3f3f) {
+                    dis[v] = dis[u] + 1;
+                    que.push(v);
+                }
+            }
+        }
+        for(const int & t : C.V) diam = max(diam, dis[t]);
+    }
+    // cerr << endl;
+    return diam;
+}
 
 #endif

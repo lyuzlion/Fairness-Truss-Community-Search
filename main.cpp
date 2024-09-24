@@ -5,17 +5,19 @@
 #include <bits/stdc++.h>
 #include "utils.hpp"
 #include "truss.hpp"
+#define debug(a) cerr << (#a) << " : " << (a) << endl
 using namespace std;
+bool in_que[maxm];
+Graph FTCS() {
+    cerr << "FTCS running...\n";
+    clock_t start = clock();
 
-bool vis[maxn];
-Graph C;
-int attr_sum[maxa];
-int dis[maxn];
-void FTCS() {
-    int lk = 1, rk = tau[q] + 1, k;
+    Graph C, ret;
+    ret.query_dis = 0x3f3f3f3f;
+    int lk = 2, rk = tau[q] + 1, k;
     while(lk < rk) {
         k = (lk + rk) >> 1;
-
+        cerr << "lk : " << lk << " , rk : " << rk << endl;
         C.V.clear();
         memset(vis, false, sizeof(vis));
 
@@ -27,8 +29,9 @@ void FTCS() {
         while(!que.empty()) {
             int u = que.front();
             que.pop();
-            for(const int & v : G[u]) {
-                if(!vis[v]) {
+            for(const int & eid : G[u]) {
+                int v = E[eid].u ^ E[eid].v ^ u;
+                if(!vis[v] && tau[v] >= k) {
                     vis[v] = true;
                     C.V.push_back(v);
                     que.push(v);
@@ -47,20 +50,27 @@ void FTCS() {
         else rk = k;
     }
     k = lk - 1;
-    cerr << k << '\n';
+    debug(k);
+    if(k <= 2) {
+        cerr << "No solotion!\n";
+        assert(0);
+    }
 
     for(const int v : C.V) {
-        for(const int u : G[v]) {
-            if(vis[u] && vis[v]) {
-                C.E.insert(hash_table_1[1ll * v * n + u]);
+        // cerr << v << " ";
+        for(const int eid : G[v]) {
+            int u = E[eid].u ^ E[eid].v ^ v;
+            if(vis[u] && vis[v] && u < v) {
+                C.E.insert(hash_table_2[1ll * v * n + u]);
                 C.G[u].insert(v);
                 C.G[v].insert(u);
+                // cerr << u << " " << v << endl;
             }
         }
     }
     // ----------------------------------------------------------------------------------
 
-    auto cmp = [](const int &v1, const int &v2) -> bool
+    auto cmp = [&C](const int &v1, const int &v2) -> bool
     {
         return C.G[v1].size() != C.G[v2].size() ? C.G[v1].size() > C.G[v2].size() : v1 < v2;
     };
@@ -79,79 +89,122 @@ void FTCS() {
             {
                 if (A[v].count(w))
                 {
-                    int eid1 = hash_table_1[1ll * v * n + vertex], eid2 = hash_table_1[1ll * v * n + w], eid3 = hash_table_1[1ll * vertex * n + w];
+                    int eid1 = hash_table_2[1ll * v * n + vertex], eid2 = hash_table_2[1ll * v * n + w], eid3 = hash_table_2[1ll * vertex * n + w];
                     C.trussness[eid1]++;
                     C.trussness[eid2]++;
                     C.trussness[eid3]++;
-                    C.triangles[eid1].insert(min(eid2, eid3), max(eid2, eid3));
-                    C.triangles[eid2].insert(min(eid1, eid3), max(eid1, eid3));
-                    C.triangles[eid3].insert(min(eid1, eid2), max(eid1, eid2));
+                    C.triangles[eid1].insert({min(eid2, eid3), max(eid2, eid3)});
+                    C.triangles[eid2].insert({min(eid1, eid3), max(eid1, eid3)});
+                    C.triangles[eid3].insert({min(eid1, eid2), max(eid1, eid2)});
                 }
             }
             A[v].insert(vertex);
         }
     }
 
-    // -----------------------------------------------------------------------------
+    // for(const int & eid : C.E) {
+    //     cerr << E[eid].u << ", " << E[eid].v << " triangle size:" << C.triangles[eid].size() << '\n';
+    // }
+
+    // // -----------------------------------------------------------------------------
     while(1) {
         queue<int> que;
         que.push(q);
         memset(dis, 0x3f, sizeof(dis));
         dis[q] = 0;
-        while(!que.empty()) {
+        while(!que.empty()) { // 计算出每个点到查询点的距离
             int u = que.front();
             que.pop();
             for(const int v : C.G[u]) {
                 if(dis[v] == 0x3f3f3f3f) {
                     dis[v] = dis[u] + 1;
+                    // cerr << v << ": " << dis[v] << endl;
                     que.push(v);
                 }
             }
         }
         sort(C.V.begin(), C.V.end(), [] (const int &v1, const int &v2) -> bool {
-            return dis[v1] > dis[v2];
+            return (dis[v1] != dis[v2]) ?  (dis[v1] > dis[v2]) : (v1 > v2);
         });
+        
+        // for(const int u : C.V) {
+        //     cerr << u << " ";
+        // }
+        // cerr << endl;
 
         assert(que.empty());
 
         C.query_dis = dis[C.V[0]];
         
-        for(int i = 0;i < gamma && i < C.V.size();i++) {
-            int v = C.V[i];
-            for(const int u : C.G[v]) {
-                int eid = hash_table_1[1ll * v * n + u];
-                que.push(eid);
+        if(C.query_dis < ret.query_dis) {
+            ret.V.clear();
+            ret.G.clear();
+            for(const int & x : C.V) {
+                ret.V.push_back(x);
+                for(const int & y : C.G[x]) {
+                    ret.G[x].insert(y);
+                }
+            }
+        }
+
+        memset(in_que, false, sizeof(in_que));
+
+        for(int i = 0;i < C.V.size() && i < _gamma;i++) {
+            int u_star = C.V[i];
+            if(i == 0) cerr << "u* : " << u_star << " " << C.V.size() << '\n';
+            for(const int u : C.G[u_star]) {
+                int eid = hash_table_2[1ll * u_star * n + u];
+                if(!in_que[eid]) {
+                    in_que[eid] = true;
+                    que.push(eid);
+                }
             }
         }
 
         while(!que.empty()) {
             int eid1 = que.front();
+            // if(C.V.size() == ) debug(E[eid1].u);
+            // debug(E[eid1].v);
             que.pop();
             int u = E[eid1].u, v = E[eid1].v;
             C.G[u].erase(v), C.G[v].erase(u);
             C.E.erase(eid1);
+
             for(auto ele : C.triangles[eid1]) {
                 int eid2 = ele.first, eid3 = ele.second;
+                // debug(E[eid2].u);
+                // debug(E[eid2].v);
+
                 C.trussness[eid2]--;
                 C.trussness[eid3]--;
-                if(C.trussness[eid2] < k - 2) {
+                
+                C.triangles[eid2].erase({min(eid1, eid3), max(eid1, eid3)});
+                if(C.trussness[eid2] < k - 2 && !in_que[eid2]) {
+                    in_que[eid2] = true;
                     que.push(eid2);
                 }
+                C.triangles[eid3].erase({min(eid1, eid2), max(eid1, eid2)});
+                if(C.trussness[eid3] < k - 2 && !in_que[eid3]) {
+                    in_que[eid3] = true;
+                    que.push(eid3);
+                }
             }
+            C.triangles[eid1].clear();
         }
 
-        sort(C.V.begin(), C.V.end(), [] (const int &v1, const int &v2) -> bool {
+        sort(C.V.begin(), C.V.end(), [&C] (const int &v1, const int &v2) -> bool {
             return C.G[v1].size() > C.G[v2].size();
         });
-
 
         while((int) C.V.size() > 0 && C.G[C.V[C.V.size() - 1]].size() == 0) {
             C.V.pop_back();
         }
 
-        for(const int u : C.V) {
-            assert((int) C.G[u].size() < k - 2);
-        }
+        // for(const int u : C.V) {
+        //     cerr << u << " ";
+            // assert((int) C.G[u].size() <= k - 2);
+        // }
+        // cerr << endl;
 
         memset(attr_sum, 0, sizeof(attr_sum));
         for(const int v : C.V) {
@@ -161,9 +214,13 @@ void FTCS() {
         for(const int attr : attr_set) {
             fairness += min(F, attr_sum[attr]);
         }
-
+        // cerr << fairness << endl;
         if(fairness < F * (int) attr_set.size()) break;
     }
+
+    clock_t end = clock();
+    cout << "Running time: " << double(end - start) / CLOCKS_PER_SEC << "s." << endl;
+    return ret;
 }
 
 mt19937 rnd(time(0));
@@ -173,35 +230,56 @@ int get_rand(int l, int r) {
 
 int main(int argc, char * argv[])
 {
-    freopen("data.in", "r", stdin);
-    freopen("data.out", "w", stdout);
+    // freopen("data.out", "w", stdout);
     ios::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
 
-    F = stoi(argv[1]);
-    q = stoi(argv[2]);
+    string dataset(argv[1]);
 
-    cin >> n >> m;
+    freopen(("../Dataset/"+ dataset + "/" + dataset + ".txt").c_str(), "r", stdin);
+    F = stoi(argv[2]);
+    q = stoi(argv[3]);
+    int attr_range = stoi(argv[4]);
+    _gamma = stoi(argv[5]);
+    // cin >> n >> m;
+    if(!data_info.count(dataset)) {
+        cerr << "Wrong dataset!\n"; 
+        assert(0);
+    }
+    n = 500000;
+    m = data_info[dataset].second;
+
 
     for (int i = 1; i <= m; i++)
     {
         cin >> E[i].u >> E[i].v;
+        E[i].u++;
+        E[i].v++;
+        
         hash_table_1[1ll * E[i].u * n + E[i].v] = i;
         hash_table_1[1ll * E[i].v * n + E[i].u] = i;
+        assert(hash_table_1[1ll * 1 * n + 2] != -1);
+        hash_table_2[1ll * E[i].u * n + E[i].v] = i;
+        hash_table_2[1ll * E[i].v * n + E[i].u] = i;
+
         D[E[i].u]++;
         D[E[i].v]++;
         G[E[i].u].push_back(i);
         G[E[i].v].push_back(i);
+
         e_link.insert(E[i].u, E[i].v, i);
         e_link.insert(E[i].v, E[i].u, i);
     }
-
     for(int i = 1;i <= n;i++) {
-        phi[i] = get_rand(0, 1);
+        // cin >> phi[i];
+        phi[i] = get_rand(0, attr_range);
         attr_set.insert(phi[i]);
     }
     truss_decomposition();
-    FTCS();
+    cout << "Truss decomposition finished." << endl;
+    Graph ans = FTCS();
+
+    cout << "diameter : " << compute_diam(ans) << '\n';
     return 0;
 }

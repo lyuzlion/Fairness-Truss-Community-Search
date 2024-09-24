@@ -15,10 +15,10 @@ struct edge
 
 
 unordered_set<int> trussness_class[max_trussness];
+int vertices_in_degree_decending_order[maxn];
 
 void truss_decomposition()
 {
-    int vertices_in_degree_decending_order[maxn];
     for (int i = 1; i <= n; i++)
         vertices_in_degree_decending_order[i] = i;
 
@@ -51,6 +51,10 @@ void truss_decomposition()
         }
     }
 
+    // for(int i = 1;i <= m;i++) {
+    //     cerr << E[i].sup << endl;
+    // }
+
     bool removed_edges[maxm];
     memset(removed_edges, 0, sizeof(removed_edges));
 
@@ -66,7 +70,6 @@ void truss_decomposition()
         }
     }
     queue<int> q;
-
     for (int i = 1; i <= m; i++)
     {
         if (E[i].sup == cur_minimum_trussness - 2)
@@ -77,7 +80,7 @@ void truss_decomposition()
         }
     }
     cur_minimum_trussness = sub_minimum_trussness;
-
+    
     while (!q.empty())
     {
         int u = E[q.front()].u, v = E[q.front()].v;
@@ -112,6 +115,7 @@ void truss_decomposition()
                 }
             }
         }
+
         for (int i = e_link.p[v]; ~i; i = e_link.e[i].next)
         {
             int eid = e_link.e[i].index_in_e;
@@ -155,16 +159,19 @@ void truss_decomposition()
     }
 
     for (int u = 1;u <= n;u++) {
-        for(const int & v : G[u]) {
-            int eid = hash_table_1[1ll * u + v];
+        for(const int & eid : G[u]) {
+            int v = E[eid].u ^ E[eid].v ^ u;
             tau[u] = max(tau[u], E[eid].trussness);
         }
     }
     
-    for (int i = 1; i <= m; i++)
-    {
-        cout << E[i].u << ", " << E[i].v << "  " << E[i].trussness << ".\n";
-    }
+    // for (int i = 1; i <= m; i++)
+    // {
+    //     // cerr << E[i].u << ", " << E[i].v << "  trussness: " << E[i].trussness << ".\n";
+    // }
+    // for(int i = 1;i <= n;i++) {
+    //     cerr << "tau " << i << " " << tau[i] << "\n";
+    // }
 }
 
 #endif
