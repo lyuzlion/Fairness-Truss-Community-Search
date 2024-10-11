@@ -13,41 +13,47 @@ Graph FTCS() {
     clock_t start = clock();
 
     Graph C, ret;
+    Graph tmp;
+
     ret.query_dis = 0x3f3f3f3f;
     int lk = 2, rk = tau[q] + 1, k;
     while(lk < rk) {
         k = (lk + rk) >> 1;
         cerr << "lk : " << lk << " , rk : " << rk << endl;
-        C.V.clear();
+        tmp.V.clear();
         memset(vis, false, sizeof(vis));
 
         queue<int> que;
         que.push(q);
         vis[q] = true;
-        C.V.push_back(q);
+        tmp.V.push_back(q);
 
         while(!que.empty()) {
             int u = que.front();
             que.pop();
             for(const int & eid : G[u]) {
                 int v = E[eid].u ^ E[eid].v ^ u;
-                if(!vis[v] && tau[v] >= k) {
+                if(!vis[v] && E[eid].trussness >= k) {
                     vis[v] = true;
-                    C.V.push_back(v);
+                    tmp.V.push_back(v);
                     que.push(v);
                 }
             }
         }
         memset(attr_sum, 0, sizeof(attr_sum));
-        for(const int v : C.V) {
+        for(const int v : tmp.V) {
             attr_sum[phi[v]]++;
         }
         int fairness = 0;
         for(const int attr : attr_set) {
             fairness += min(F, attr_sum[attr]);
         }
-        if(fairness == F * (int) attr_set.size()) lk = k + 1;
-        else rk = k;
+        if(fairness == F * (int) attr_set.size()) {
+            lk = k + 1;
+            C.V.clear();
+            for(const int x : tmp.V) C.V.push_back(x);
+        } else rk = k;
+        // cerr << "fairness:" << F * (int) attr_set.size() << '\n';
     }
     k = lk - 1;
     debug(k);
@@ -107,7 +113,13 @@ Graph FTCS() {
     // }
 
     // // -----------------------------------------------------------------------------
+    
+    // clock_t start = clock();
+    clock_t end = clock();
+    cout << "Running time: " << double(end - start) / CLOCKS_PER_SEC << "s." << endl;
+    clock_t t_dist = 0, t_maintain = 0;
     while(1) {
+        clock_t t1 = clock();
         queue<int> que;
         que.push(q);
         memset(dis, 0x3f, sizeof(dis));
@@ -126,7 +138,12 @@ Graph FTCS() {
         sort(C.V.begin(), C.V.end(), [] (const int &v1, const int &v2) -> bool {
             return (dis[v1] != dis[v2]) ?  (dis[v1] > dis[v2]) : (v1 > v2);
         });
-        
+
+        clock_t t2 = clock();
+        t_dist += t2 - t1;
+        // ofstream fout("./case.txt");
+        // cerr <<(int) C.V.size() << endl;
+        // sort(C.V.begin(), C.V.end());
         // for(const int u : C.V) {
         //     cerr << u << " ";
         // }
@@ -135,23 +152,26 @@ Graph FTCS() {
         assert(que.empty());
 
         C.query_dis = dis[C.V[0]];
+
         
         if(C.query_dis < ret.query_dis) {
             ret.V.clear();
             ret.G.clear();
-            for(const int & x : C.V) {
-                ret.V.push_back(x);
-                for(const int & y : C.G[x]) {
+            for(const int x : C.V) {
+                ret.V.emplace_back(x);
+                for(const int y : C.G[x]) {
                     ret.G[x].insert(y);
                 }
             }
+            ret.query_dis = C.query_dis;
+            printf("current query_dis: %d\n", ret.query_dis);
         }
 
         memset(in_que, false, sizeof(in_que));
 
         for(int i = 0;i < C.V.size() && i < _gamma;i++) {
             int u_star = C.V[i];
-            if(i == 0) cerr << "u* : " << u_star << " " << C.V.size() << '\n';
+            // if(i == 0) cerr << "u* : " << u_star << " " << C.V.size() << '\n';
             for(const int u : C.G[u_star]) {
                 int eid = hash_table_2[1ll * u_star * n + u];
                 if(!in_que[eid]) {
@@ -161,6 +181,7 @@ Graph FTCS() {
             }
         }
 
+        clock_t t3 = clock();
         while(!que.empty()) {
             int eid1 = que.front();
             // if(C.V.size() == ) debug(E[eid1].u);
@@ -191,7 +212,8 @@ Graph FTCS() {
             }
             C.triangles[eid1].clear();
         }
-
+        clock_t t4 = clock();
+        t_maintain += t4 - t3;
         sort(C.V.begin(), C.V.end(), [&C] (const int &v1, const int &v2) -> bool {
             return C.G[v1].size() > C.G[v2].size();
         });
@@ -199,6 +221,7 @@ Graph FTCS() {
         while((int) C.V.size() > 0 && C.G[C.V[C.V.size() - 1]].size() == 0) {
             C.V.pop_back();
         }
+
 
         // for(const int u : C.V) {
         //     cerr << u << " ";
@@ -218,8 +241,11 @@ Graph FTCS() {
         if(fairness < F * (int) attr_set.size()) break;
     }
 
-    clock_t end = clock();
-    cout << "Running time: " << double(end - start) / CLOCKS_PER_SEC << "s." << endl;
+    cerr << "Distance time: " << double(t_dist) / CLOCKS_PER_SEC << "s." << endl;
+    cerr << "Maintain time: " << double(t_maintain) / CLOCKS_PER_SEC << "s." << endl;
+
+    clock_t endend = clock();
+    cout << "Running time: " << double(endend - end) / CLOCKS_PER_SEC << "s." << endl;
     return ret;
 }
 
@@ -230,7 +256,6 @@ int get_rand(int l, int r) {
 
 int main(int argc, char * argv[])
 {
-    // freopen("data.out", "w", stdout);
     ios::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
@@ -242,12 +267,12 @@ int main(int argc, char * argv[])
     q = stoi(argv[3]);
     int attr_range = stoi(argv[4]);
     _gamma = stoi(argv[5]);
-    // cin >> n >> m;
+
     if(!data_info.count(dataset)) {
         cerr << "Wrong dataset!\n"; 
         assert(0);
     }
-    n = 500000;
+    n = data_info[dataset].first;
     m = data_info[dataset].second;
 
 
@@ -259,7 +284,6 @@ int main(int argc, char * argv[])
         
         hash_table_1[1ll * E[i].u * n + E[i].v] = i;
         hash_table_1[1ll * E[i].v * n + E[i].u] = i;
-        assert(hash_table_1[1ll * 1 * n + 2] != -1);
         hash_table_2[1ll * E[i].u * n + E[i].v] = i;
         hash_table_2[1ll * E[i].v * n + E[i].u] = i;
 
@@ -271,15 +295,17 @@ int main(int argc, char * argv[])
         e_link.insert(E[i].u, E[i].v, i);
         e_link.insert(E[i].v, E[i].u, i);
     }
-    for(int i = 1;i <= n;i++) {
+
+    for(int i = 1;i <= n;i++) { 
         // cin >> phi[i];
-        phi[i] = get_rand(0, attr_range);
+        phi[i] = get_rand(0, attr_range - 1);
         attr_set.insert(phi[i]);
     }
+
     truss_decomposition();
     cout << "Truss decomposition finished." << endl;
-    Graph ans = FTCS();
 
+    Graph ans = FTCS();
     cout << "diameter : " << compute_diam(ans) << '\n';
     return 0;
 }

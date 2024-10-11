@@ -54,7 +54,6 @@ void truss_decomposition()
     // for(int i = 1;i <= m;i++) {
     //     cerr << E[i].sup << endl;
     // }
-
     bool removed_edges[maxm];
     memset(removed_edges, 0, sizeof(removed_edges));
 
@@ -169,9 +168,10 @@ void truss_decomposition()
     // {
     //     // cerr << E[i].u << ", " << E[i].v << "  trussness: " << E[i].trussness << ".\n";
     // }
-    // for(int i = 1;i <= n;i++) {
-    //     cerr << "tau " << i << " " << tau[i] << "\n";
-    // }
+    for(int i = 1;i <= n;i++) {
+        // if(tau[i] >= 100) cerr << i << endl;
+        // cerr << "tau " << i << " " << tau[i] << "\n";
+    }
 }
 
 #endif

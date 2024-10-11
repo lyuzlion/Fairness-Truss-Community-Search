@@ -4,8 +4,8 @@
 using namespace std;
 
 const int max_trussness = 1105;
-const int maxn = 520005;
-const int maxm = 1050005;
+const int maxn = 4050005;
+const int maxm = 35000005;
 const int maxa = 10;
 int _gamma = 1;
 
@@ -17,8 +17,8 @@ struct HashTable
         long long u;
         int v, next;
     };
-    data e[maxm << 5];
-    int h[maxm << 4], cnt;
+    data e[maxm];
+    int h[maxm], cnt;
 
     int hash(long long u) { return u < mod ? u : u % mod; }
 
@@ -138,9 +138,10 @@ bool vis[maxn];
 int attr_sum[maxa];
 int dis[maxn];
 
-map<string, pair<int, int> > data_info = {{"facebook_combined", {4039, 88234}}, {"DBLP", {317080, 1049866}}};
+map<string, pair<int, int> > data_info = {{"facebook_combined", {4039, 88234}}, {"DBLP", {500000, 1049866}}, {"com-lj.ungraph", {4040000, 34681193}}};
 
 int compute_diam(Graph &C) {
+
     int diam = 0;
     for(const int & w : C.V) {
         // cerr << w << " ";
