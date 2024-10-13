@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int max_trussness = 1105;
+const int max_trussness = 100005;
 const int maxn = 4050005;
 const int maxm = 35000005;
 const int maxa = 10;
@@ -17,8 +17,9 @@ struct HashTable
         long long u;
         int v, next;
     };
-    data e[maxm];
-    int h[maxm], cnt;
+    vector<data> e;
+    vector<int> h;
+    int cnt;
 
     int hash(long long u) { return u < mod ? u : u % mod; }
 
@@ -63,7 +64,8 @@ struct HashTable
     HashTable()
     {
         cnt = 0;
-        memset(h, 0, sizeof(h));
+        e.resize(maxm << 3);
+        h.resize(maxm << 3, 0);
     }
 };
 
@@ -74,8 +76,11 @@ struct edge_link
     struct data
     {
         int v, pre, next, index_in_e;
-    } e[maxm << 1];
-    int p[maxn], eid;
+    };
+    
+    vector<data> e;
+    vector<int> p;
+    int eid;
 
     void insert(int u, int v, int index_in_e)
     {
@@ -93,6 +98,7 @@ struct edge_link
 
     void erase(int cur_id)
     {
+        assert(cur_id >= 0);
         if (~e[cur_id].next)
             e[e[cur_id].next].pre = e[cur_id].pre;
         if (~e[cur_id].pre)
@@ -101,8 +107,9 @@ struct edge_link
     
     edge_link()
     {
-        memset(p, -1, sizeof(p));
         eid = 0;
+        p.resize(maxn, -1);
+        e.resize(maxm << 1);
     }
 };
 
@@ -129,6 +136,7 @@ vector<int> G[maxn]; // 存原图每个点连出的边的编号
 int D[maxn]; // 存原图每个点的点度
 int n, m, F, q;
 HashTable hash_table_1, hash_table_2;
+// map<pair<int, int>, int> mp1, mp2;
 edge_link e_link;
 int tau[maxn]; // 存每个节点的tau值
 int phi[maxn]; // 存每个点的属性
@@ -138,7 +146,7 @@ bool vis[maxn];
 int attr_sum[maxa];
 int dis[maxn];
 
-map<string, pair<int, int> > data_info = {{"facebook_combined", {4039, 88234}}, {"DBLP", {500000, 1049866}}, {"com-lj.ungraph", {4040000, 34681193}}};
+map<string, pair<int, int> > data_info = {{"facebook_combined", {4039, 88234}}, {"DBLP", {500000, 1049866}}, {"com-lj.ungraph", {4040000, 34681189}}};
 
 int compute_diam(Graph &C) {
 

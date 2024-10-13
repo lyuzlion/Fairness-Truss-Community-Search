@@ -1,4 +1,4 @@
-// #pragma GCC optimize(3,"Ofast")
+#pragma GCC optimize(3,"Ofast")
 // #pragma GCC optimize("Ofast,no-stack-protector,unroll-loops,fast-math")
 // #pragma GCC target("sse,sse2,sse3,ssse3,sse4.1,sse4.2,avx,avx2,popcnt,tune=native")
 
@@ -116,7 +116,7 @@ Graph FTCS() {
     
     // clock_t start = clock();
     clock_t end = clock();
-    cout << "Running time: " << double(end - start) / CLOCKS_PER_SEC << "s." << endl;
+    cout << "Binary search running time: " << double(end - start) / CLOCKS_PER_SEC << "s." << endl;
     clock_t t_dist = 0, t_maintain = 0;
     while(1) {
         clock_t t1 = clock();
@@ -245,7 +245,7 @@ Graph FTCS() {
     cerr << "Maintain time: " << double(t_maintain) / CLOCKS_PER_SEC << "s." << endl;
 
     clock_t endend = clock();
-    cout << "Running time: " << double(endend - end) / CLOCKS_PER_SEC << "s." << endl;
+    cout << "Delete running time: " << double(endend - end) / CLOCKS_PER_SEC << "s." << endl;
     return ret;
 }
 
@@ -260,9 +260,19 @@ int main(int argc, char * argv[])
     cin.tie(0);
     cout.tie(0);
 
-    string dataset(argv[1]);
+    if(argc != 6) {
+        cerr << "Usage: ./main dataset F q attr_range gamma\n";
+        return -1;
+    }
 
-    freopen(("../Dataset/"+ dataset + "/" + dataset + ".txt").c_str(), "r", stdin);
+    string dataset(argv[1]);
+    cerr << "Loading ../Dataset/"+ dataset + "/" + dataset + ".txt" << endl;
+    FILE *result = freopen(("../Dataset/"+ dataset + "/" + dataset + ".txt").c_str(), "r", stdin);
+    if (result == NULL) {
+        cerr << "No such file!\n";
+        return -1;
+    }
+
     F = stoi(argv[2]);
     q = stoi(argv[3]);
     int attr_range = stoi(argv[4]);
@@ -272,6 +282,7 @@ int main(int argc, char * argv[])
         cerr << "Wrong dataset!\n"; 
         assert(0);
     }
+
     n = data_info[dataset].first;
     m = data_info[dataset].second;
 
@@ -281,12 +292,12 @@ int main(int argc, char * argv[])
         cin >> E[i].u >> E[i].v;
         E[i].u++;
         E[i].v++;
-        
+        if(i % 200000 == 0) cerr << "Reading edge " << fixed << setprecision(4) << 100.0 * i / m << "%.\n";
         hash_table_1[1ll * E[i].u * n + E[i].v] = i;
         hash_table_1[1ll * E[i].v * n + E[i].u] = i;
         hash_table_2[1ll * E[i].u * n + E[i].v] = i;
         hash_table_2[1ll * E[i].v * n + E[i].u] = i;
-
+        assert(E[i].u != E[i].v);
         D[E[i].u]++;
         D[E[i].v]++;
         G[E[i].u].push_back(i);
@@ -296,14 +307,16 @@ int main(int argc, char * argv[])
         e_link.insert(E[i].v, E[i].u, i);
     }
 
+    cerr << "Reading finished." << endl;
+
     for(int i = 1;i <= n;i++) { 
         // cin >> phi[i];
         phi[i] = get_rand(0, attr_range - 1);
         attr_set.insert(phi[i]);
     }
-
+    cerr << "Truss decomposition running...\n";
     truss_decomposition();
-    cout << "Truss decomposition finished." << endl;
+    cerr << "Truss decomposition finished." << endl;
 
     Graph ans = FTCS();
     cout << "diameter : " << compute_diam(ans) << '\n';

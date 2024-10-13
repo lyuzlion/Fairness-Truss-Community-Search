@@ -28,18 +28,20 @@ void truss_decomposition()
     };
     sort(vertices_in_degree_decending_order + 1, vertices_in_degree_decending_order + n + 1, cmp);
 
-    unordered_set<int> A[maxn];
+    vector<unordered_set<int>> A(maxn);
 
     for (int i = 1; i <= n; i++)
     {
+        if(i % 10000 == 0) cerr << "Computing support " << fixed << setprecision(4) << 100.0 * i / n << "%.\n";
         int vertex = vertices_in_degree_decending_order[i];
-        for (const int &eid : G[vertex])
+        for (const int eid : G[vertex])
         {
             int v = E[eid].v ^ E[eid].u ^ vertex;
             if (cmp(v, vertex))
                 continue;
-            for (const int &w : A[vertex])
+            for (const int w : A[vertex])
             {
+                // cerr << vertex << " " << v << " " << w << endl;
                 if (A[v].count(w))
                 {
                     E[eid].sup++;
@@ -50,15 +52,11 @@ void truss_decomposition()
             A[v].insert(vertex);
         }
     }
+    for(int i = 1;i <= n;i++) A[i].clear();
 
-    // for(int i = 1;i <= m;i++) {
-    //     cerr << E[i].sup << endl;
-    // }
-    bool removed_edges[maxm];
-    memset(removed_edges, 0, sizeof(removed_edges));
-
+    vector<bool> removed_edges(maxm, false);
+    cerr << "Support computed!\n";
     int cur_minimum_trussness = max_trussness, sub_minimum_trussness = max_trussness;
-
     for (int i = 1; i <= m; i++)
     {
         trussness_class[E[i].sup + 2].insert(i);
@@ -80,12 +78,17 @@ void truss_decomposition()
     }
     cur_minimum_trussness = sub_minimum_trussness;
     
+    cerr << "Computing trussness!\n";
+    int num = 0;
     while (!q.empty())
     {
         int u = E[q.front()].u, v = E[q.front()].v;
         int eid_uv = hash_table_1[1ll * u * n + v];
         hash_table_1.erase(1ll * v * n + u);
         hash_table_1.erase(1ll * u * n + v);
+        // cerr << ((eid_uv - 1) << 1) << endl;
+        // ++num;
+        // if(num % 10000 == 0) cerr << num << ".\n";
         e_link.erase((eid_uv - 1) << 1);
         e_link.erase((eid_uv - 1) << 1 | 1);
 
@@ -143,8 +146,9 @@ void truss_decomposition()
         {
             for (int i = E[eid_uv].trussness + 1; i < max_trussness; i++)
             {
-                if ((int)trussness_class[i].size() != 0)
+                if ((int) trussness_class[i].size() != 0)
                 {
+                    cerr << "Current trussness : " << i << ".\n";
                     for (const int &eid : trussness_class[i])
                     {
                         q.push(eid);
@@ -162,15 +166,6 @@ void truss_decomposition()
             int v = E[eid].u ^ E[eid].v ^ u;
             tau[u] = max(tau[u], E[eid].trussness);
         }
-    }
-    
-    // for (int i = 1; i <= m; i++)
-    // {
-    //     // cerr << E[i].u << ", " << E[i].v << "  trussness: " << E[i].trussness << ".\n";
-    // }
-    for(int i = 1;i <= n;i++) {
-        // if(tau[i] >= 100) cerr << i << endl;
-        // cerr << "tau " << i << " " << tau[i] << "\n";
     }
 }
 
