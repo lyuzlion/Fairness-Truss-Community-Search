@@ -161,10 +161,18 @@ void truss_decomposition()
         }
     }
 
+    int max_trussness = 0;
     for (int u = 1;u <= n;u++) {
         for(const int & eid : G[u]) {
             int v = E[eid].u ^ E[eid].v ^ u;
             tau[u] = max(tau[u], E[eid].trussness);
+            max_trussness = max(max_trussness, tau[u]);
+        }
+    }
+    
+    for(int u = 1;u <= n;u++) {
+        if(tau[u] == max_trussness) {
+            cerr << u << "\n";
         }
     }
 }
