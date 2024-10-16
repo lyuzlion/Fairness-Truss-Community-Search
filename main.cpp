@@ -164,7 +164,7 @@ Graph FTCS() {
                 }
             }
             ret.query_dis = C.query_dis;
-            printf("current query_dis: %d\n", ret.query_dis);
+            cerr << "current query_dis: " << ret.query_dis << '\n';
         }
 
         memset(in_que, false, sizeof(in_que));
@@ -241,11 +241,12 @@ Graph FTCS() {
         if(fairness < F * (int) attr_set.size()) break;
     }
 
-    cerr << "Distance time: " << double(t_dist) / CLOCKS_PER_SEC << "s." << endl;
-    cerr << "Maintain time: " << double(t_maintain) / CLOCKS_PER_SEC << "s." << endl;
+    cerr << "Distance time: " << double(t_dist) / CLOCKS_PER_SEC << "s.\n";
+    cerr << "Maintain time: " << double(t_maintain) / CLOCKS_PER_SEC << "s.\n";
 
     clock_t endend = clock();
-    cout << "Delete running time: " << double(endend - end) / CLOCKS_PER_SEC << "s." << endl;
+    cerr << "Delete running time: " << double(endend - end) / CLOCKS_PER_SEC << "s.\n";
+    cout << "Overall running time: " << double(endend - start) / CLOCKS_PER_SEC << "s.\n";
     return ret;
 }
 
