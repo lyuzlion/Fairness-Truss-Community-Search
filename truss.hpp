@@ -32,7 +32,7 @@ void truss_decomposition()
 
     for (int i = 1; i <= n; i++)
     {
-        if(i % 10000 == 0) cerr << "Computing support " << fixed << setprecision(4) << 100.0 * i / n << "%.\n";
+        if(i % 50000 == 0) cerr << "Computing support " << fixed << setprecision(4) << 100.0 * i / n << "%.\n";
         int vertex = vertices_in_degree_decending_order[i];
         for (const int eid : G[vertex])
         {
@@ -170,11 +170,11 @@ void truss_decomposition()
         }
     }
     
-    for(int u = 1;u <= n;u++) {
-        if(tau[u] == max_trussness) {
-            cerr << u << "\n";
-        }
-    }
+    // for(int u = 1;u <= n;u++) {
+    //     if(tau[u] <= max_trussness * 0.15 + 4 && tau[u] >= max_trussness * 0.15 - 5) {
+    //         cerr << u << "\n";
+    //     }
+    // }
 }
 
 #endif

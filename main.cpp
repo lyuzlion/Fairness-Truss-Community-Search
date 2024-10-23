@@ -1,11 +1,11 @@
-#pragma GCC optimize(3,"Ofast")
+#pragma GCC optimize(2,"Ofast")
 #pragma GCC optimize("Ofast,no-stack-protector,unroll-loops,fast-math")
 // #pragma GCC target("sse,sse2,sse3,ssse3,sse4.1,sse4.2,avx,avx2,popcnt,tune=native")
 
 #include <bits/stdc++.h>
 #include "utils.hpp"
 #include "truss.hpp"
-#define debug(a) cerr << (#a) << " : " << (a) << endl
+#define debug(a) cout << (#a) << " : " << (a) << endl
 using namespace std;
 bool in_que[maxm];
 Graph FTCS() {
@@ -19,7 +19,6 @@ Graph FTCS() {
     int lk = 2, rk = tau[q] + 1, k;
     while(lk < rk) {
         k = (lk + rk) >> 1;
-        cerr << "lk : " << lk << " , rk : " << rk << endl;
         tmp.V.clear();
         memset(vis, false, sizeof(vis));
 
@@ -48,6 +47,7 @@ Graph FTCS() {
         for(const int attr : attr_set) {
             fairness += min(F, attr_sum[attr]);
         }
+        cerr << "lk : " << lk << " , rk : " << rk << ", fairness:" << fairness << '\n';
         if(fairness == F * (int) attr_set.size()) {
             lk = k + 1;
             C.V.clear();
@@ -62,15 +62,22 @@ Graph FTCS() {
         assert(0);
     }
 
-    for(const int v : C.V) {
-        // cerr << v << " ";
-        for(const int eid : G[v]) {
-            int u = E[eid].u ^ E[eid].v ^ v;
-            if(vis[u] && vis[v] && u < v) {
+    memset(vis, false, sizeof(vis));
+    queue<int> que; // 把边加进去
+    que.push(q);
+    vis[q] = true;
+
+    while(!que.empty()) {
+        int u = que.front();
+        que.pop();
+        for(const int & eid : G[u]) {
+            int v = E[eid].u ^ E[eid].v ^ u;
+            if(!vis[v] && E[eid].trussness >= k) {
+                vis[v] = true;
                 C.E.insert(hash_table_2[1ll * v * n + u]);
                 C.G[u].insert(v);
                 C.G[v].insert(u);
-                // cerr << u << " " << v << endl;
+                que.push(v);
             }
         }
     }
@@ -81,7 +88,7 @@ Graph FTCS() {
         return C.G[v1].size() != C.G[v2].size() ? C.G[v1].size() > C.G[v2].size() : v1 < v2;
     };
     sort(C.V.begin(), C.V.end(), cmp);
-
+    cerr << "C.V size: " << C.V.size() << '\n';
     unordered_set<int> A[maxn];
 
     for (int i = 0; i < C.V.size(); i++)
@@ -116,8 +123,9 @@ Graph FTCS() {
     
     // clock_t start = clock();
     clock_t end = clock();
-    cout << "Binary search running time: " << double(end - start) / CLOCKS_PER_SEC << "s." << endl;
+    cerr << "Binary search running time: " << double(end - start) / CLOCKS_PER_SEC << "s." << endl;
     clock_t t_dist = 0, t_maintain = 0;
+    int tot = 0;
     while(1) {
         clock_t t1 = clock();
         queue<int> que;
@@ -152,7 +160,8 @@ Graph FTCS() {
         assert(que.empty());
 
         C.query_dis = dis[C.V[0]];
-
+        tot++;
+        if(tot % 10 == 0) cerr << "iter : " << tot << ", current query_dis: " << ret.query_dis << ", C.V.size:" << C.V.size() << '\n';
         
         if(C.query_dis < ret.query_dis) {
             ret.V.clear();
@@ -164,7 +173,6 @@ Graph FTCS() {
                 }
             }
             ret.query_dis = C.query_dis;
-            cerr << "current query_dis: " << ret.query_dis << '\n';
         }
 
         memset(in_que, false, sizeof(in_que));
@@ -274,25 +282,26 @@ int main(int argc, char * argv[])
         return -1;
     }
 
+
     F = stoi(argv[2]);
     q = stoi(argv[3]);
     int attr_range = stoi(argv[4]);
     _gamma = stoi(argv[5]);
 
-    if(!data_info.count(dataset)) {
-        cerr << "Wrong dataset!\n"; 
-        assert(0);
-    }
+    freopen(("./output/dataset_" + dataset + "_F_" + to_string(F) + "_q_" + to_string(q) + "_R_" + to_string(attr_range) + "_gamma_" + to_string(_gamma) + ".txt").c_str(), "w", stdout);
 
-    n = data_info[dataset].first;
-    m = data_info[dataset].second;
+    // if(!data_info.count(dataset)) {
+    //     cerr << "Wrong dataset!\n"; 
+    //     assert(0);
+    // }
 
+    // n = data_info[dataset].first;
+    // m = data_info[dataset].second;
+    cin >> n >> m;
 
     for (int i = 1; i <= m; i++)
     {
         cin >> E[i].u >> E[i].v;
-        E[i].u++;
-        E[i].v++;
         if(i % 200000 == 0) cerr << "Reading edge " << fixed << setprecision(4) << 100.0 * i / m << "%.\n";
         hash_table_1[1ll * E[i].u * n + E[i].v] = i;
         hash_table_1[1ll * E[i].v * n + E[i].u] = i;

@@ -1,0 +1,1979 @@
+Loading ../Dataset/facebook_A4/facebook_A4.txt
+Reading finished.
+Truss decomposition running...
+Support computed!
+Computing trussness!
+Current trussness : 3.
+Current trussness : 4.
+Current trussness : 5.
+Current trussness : 6.
+Current trussness : 7.
+Current trussness : 8.
+Current trussness : 9.
+Current trussness : 10.
+Current trussness : 11.
+Current trussness : 12.
+Current trussness : 13.
+Current trussness : 14.
+Current trussness : 15.
+Current trussness : 16.
+Current trussness : 17.
+Current trussness : 18.
+Current trussness : 19.
+Current trussness : 20.
+Current trussness : 21.
+Current trussness : 22.
+Current trussness : 23.
+Current trussness : 24.
+Current trussness : 25.
+Current trussness : 26.
+Current trussness : 27.
+Current trussness : 28.
+Current trussness : 29.
+Current trussness : 30.
+Current trussness : 31.
+Current trussness : 32.
+Current trussness : 33.
+Current trussness : 34.
+Current trussness : 35.
+Current trussness : 36.
+Current trussness : 37.
+Current trussness : 38.
+Current trussness : 39.
+Current trussness : 40.
+Current trussness : 41.
+Current trussness : 42.
+Current trussness : 43.
+Current trussness : 44.
+Current trussness : 45.
+Current trussness : 46.
+Current trussness : 47.
+Current trussness : 48.
+Current trussness : 49.
+Current trussness : 50.
+Current trussness : 51.
+Current trussness : 52.
+Current trussness : 53.
+Current trussness : 54.
+Current trussness : 55.
+Current trussness : 56.
+Current trussness : 57.
+Current trussness : 58.
+Current trussness : 59.
+Current trussness : 60.
+Current trussness : 61.
+Current trussness : 62.
+Current trussness : 63.
+Current trussness : 64.
+Current trussness : 65.
+Current trussness : 66.
+Current trussness : 67.
+Current trussness : 68.
+Current trussness : 69.
+Current trussness : 70.
+Current trussness : 71.
+Current trussness : 72.
+Current trussness : 73.
+Current trussness : 74.
+Current trussness : 75.
+Current trussness : 76.
+Current trussness : 77.
+Current trussness : 78.
+Current trussness : 79.
+Current trussness : 80.
+Current trussness : 81.
+Current trussness : 82.
+Current trussness : 83.
+Current trussness : 84.
+Current trussness : 85.
+Current trussness : 86.
+Current trussness : 87.
+Current trussness : 88.
+Current trussness : 89.
+Current trussness : 90.
+Current trussness : 91.
+Current trussness : 92.
+Current trussness : 93.
+Current trussness : 94.
+Current trussness : 95.
+Current trussness : 96.
+Current trussness : 97.
+Truss decomposition finished.
+FTCS running...
+lk : 2 , rk : 17, fairness:80
+lk : 10 , rk : 17, fairness:69
+lk : 10 , rk : 13, fairness:80
+lk : 12 , rk : 13, fairness:75
+C.V size: 104
+Binary search running time: 0.017483s.
+Distance time: 0.011227s.
+Maintain time: 2.2e-05s.
+Delete running time: 0.034604s.
+Loading ../Dataset/facebook_A4/facebook_A4.txt
+Reading finished.
+Truss decomposition running...
+Support computed!
+Computing trussness!
+Current trussness : 3.
+Current trussness : 4.
+Current trussness : 5.
+Current trussness : 6.
+Current trussness : 7.
+Current trussness : 8.
+Current trussness : 9.
+Current trussness : 10.
+Current trussness : 11.
+Current trussness : 12.
+Current trussness : 13.
+Current trussness : 14.
+Current trussness : 15.
+Current trussness : 16.
+Current trussness : 17.
+Current trussness : 18.
+Current trussness : 19.
+Current trussness : 20.
+Current trussness : 21.
+Current trussness : 22.
+Current trussness : 23.
+Current trussness : 24.
+Current trussness : 25.
+Current trussness : 26.
+Current trussness : 27.
+Current trussness : 28.
+Current trussness : 29.
+Current trussness : 30.
+Current trussness : 31.
+Current trussness : 32.
+Current trussness : 33.
+Current trussness : 34.
+Current trussness : 35.
+Current trussness : 36.
+Current trussness : 37.
+Current trussness : 38.
+Current trussness : 39.
+Current trussness : 40.
+Current trussness : 41.
+Current trussness : 42.
+Current trussness : 43.
+Current trussness : 44.
+Current trussness : 45.
+Current trussness : 46.
+Current trussness : 47.
+Current trussness : 48.
+Current trussness : 49.
+Current trussness : 50.
+Current trussness : 51.
+Current trussness : 52.
+Current trussness : 53.
+Current trussness : 54.
+Current trussness : 55.
+Current trussness : 56.
+Current trussness : 57.
+Current trussness : 58.
+Current trussness : 59.
+Current trussness : 60.
+Current trussness : 61.
+Current trussness : 62.
+Current trussness : 63.
+Current trussness : 64.
+Current trussness : 65.
+Current trussness : 66.
+Current trussness : 67.
+Current trussness : 68.
+Current trussness : 69.
+Current trussness : 70.
+Current trussness : 71.
+Current trussness : 72.
+Current trussness : 73.
+Current trussness : 74.
+Current trussness : 75.
+Current trussness : 76.
+Current trussness : 77.
+Current trussness : 78.
+Current trussness : 79.
+Current trussness : 80.
+Current trussness : 81.
+Current trussness : 82.
+Current trussness : 83.
+Current trussness : 84.
+Current trussness : 85.
+Current trussness : 86.
+Current trussness : 87.
+Current trussness : 88.
+Current trussness : 89.
+Current trussness : 90.
+Current trussness : 91.
+Current trussness : 92.
+Current trussness : 93.
+Current trussness : 94.
+Current trussness : 95.
+Current trussness : 96.
+Current trussness : 97.
+Truss decomposition finished.
+FTCS running...
+lk : 2 , rk : 12, fairness:80
+lk : 8 , rk : 12, fairness:79
+lk : 8 , rk : 10, fairness:80
+C.V size: 2622
+Binary search running time: 0.02294s.
+iter : 10, current query_dis: 7, C.V.size:2613
+iter : 20, current query_dis: 7, C.V.size:2603
+iter : 30, current query_dis: 7, C.V.size:2593
+iter : 40, current query_dis: 7, C.V.size:2583
+iter : 50, current query_dis: 7, C.V.size:2573
+iter : 60, current query_dis: 7, C.V.size:2563
+iter : 70, current query_dis: 7, C.V.size:2553
+iter : 80, current query_dis: 7, C.V.size:2543
+iter : 90, current query_dis: 7, C.V.size:2533
+iter : 100, current query_dis: 7, C.V.size:2523
+iter : 110, current query_dis: 7, C.V.size:2513
+iter : 120, current query_dis: 7, C.V.size:2503
+iter : 130, current query_dis: 7, C.V.size:2493
+iter : 140, current query_dis: 7, C.V.size:2483
+iter : 150, current query_dis: 7, C.V.size:2473
+iter : 160, current query_dis: 7, C.V.size:2463
+iter : 170, current query_dis: 7, C.V.size:2453
+iter : 180, current query_dis: 7, C.V.size:2443
+iter : 190, current query_dis: 7, C.V.size:2433
+iter : 200, current query_dis: 7, C.V.size:2423
+iter : 210, current query_dis: 7, C.V.size:2413
+iter : 220, current query_dis: 7, C.V.size:2403
+iter : 230, current query_dis: 7, C.V.size:2393
+iter : 240, current query_dis: 7, C.V.size:2383
+iter : 250, current query_dis: 7, C.V.size:2373
+iter : 260, current query_dis: 7, C.V.size:2363
+iter : 270, current query_dis: 7, C.V.size:2353
+iter : 280, current query_dis: 7, C.V.size:2343
+iter : 290, current query_dis: 7, C.V.size:2333
+iter : 300, current query_dis: 7, C.V.size:2323
+iter : 310, current query_dis: 7, C.V.size:2313
+iter : 320, current query_dis: 7, C.V.size:2303
+iter : 330, current query_dis: 7, C.V.size:2293
+iter : 340, current query_dis: 7, C.V.size:2283
+iter : 350, current query_dis: 7, C.V.size:2273
+iter : 360, current query_dis: 7, C.V.size:2263
+iter : 370, current query_dis: 7, C.V.size:2253
+iter : 380, current query_dis: 7, C.V.size:2243
+iter : 390, current query_dis: 7, C.V.size:2233
+iter : 400, current query_dis: 7, C.V.size:2223
+iter : 410, current query_dis: 7, C.V.size:2213
+iter : 420, current query_dis: 7, C.V.size:2203
+iter : 430, current query_dis: 7, C.V.size:2193
+iter : 440, current query_dis: 7, C.V.size:2183
+iter : 450, current query_dis: 7, C.V.size:2173
+iter : 460, current query_dis: 7, C.V.size:2163
+iter : 470, current query_dis: 7, C.V.size:2153
+iter : 480, current query_dis: 7, C.V.size:2143
+iter : 490, current query_dis: 7, C.V.size:2133
+iter : 500, current query_dis: 7, C.V.size:2123
+iter : 510, current query_dis: 7, C.V.size:2113
+iter : 520, current query_dis: 7, C.V.size:2103
+iter : 530, current query_dis: 7, C.V.size:2093
+iter : 540, current query_dis: 7, C.V.size:2083
+iter : 550, current query_dis: 7, C.V.size:2073
+iter : 560, current query_dis: 7, C.V.size:2063
+iter : 570, current query_dis: 7, C.V.size:2053
+iter : 580, current query_dis: 7, C.V.size:2043
+iter : 590, current query_dis: 7, C.V.size:2033
+iter : 600, current query_dis: 7, C.V.size:2023
+iter : 610, current query_dis: 7, C.V.size:2013
+iter : 620, current query_dis: 7, C.V.size:2003
+iter : 630, current query_dis: 7, C.V.size:1993
+iter : 640, current query_dis: 7, C.V.size:1983
+iter : 650, current query_dis: 7, C.V.size:1973
+iter : 660, current query_dis: 7, C.V.size:1963
+iter : 670, current query_dis: 7, C.V.size:1953
+iter : 680, current query_dis: 7, C.V.size:1943
+iter : 690, current query_dis: 7, C.V.size:1933
+iter : 700, current query_dis: 7, C.V.size:1923
+iter : 710, current query_dis: 7, C.V.size:1913
+iter : 720, current query_dis: 7, C.V.size:1903
+iter : 730, current query_dis: 7, C.V.size:1893
+iter : 740, current query_dis: 7, C.V.size:1883
+iter : 750, current query_dis: 7, C.V.size:1873
+iter : 760, current query_dis: 7, C.V.size:1863
+iter : 770, current query_dis: 6, C.V.size:1853
+iter : 780, current query_dis: 6, C.V.size:1843
+iter : 790, current query_dis: 6, C.V.size:1833
+iter : 800, current query_dis: 6, C.V.size:1823
+iter : 810, current query_dis: 6, C.V.size:1813
+iter : 820, current query_dis: 6, C.V.size:1803
+iter : 830, current query_dis: 6, C.V.size:1793
+iter : 840, current query_dis: 6, C.V.size:1783
+iter : 850, current query_dis: 6, C.V.size:1773
+iter : 860, current query_dis: 6, C.V.size:1763
+iter : 870, current query_dis: 6, C.V.size:1753
+iter : 880, current query_dis: 6, C.V.size:1743
+iter : 890, current query_dis: 6, C.V.size:1733
+iter : 900, current query_dis: 6, C.V.size:1723
+iter : 910, current query_dis: 6, C.V.size:1713
+iter : 920, current query_dis: 6, C.V.size:1703
+iter : 930, current query_dis: 6, C.V.size:1693
+iter : 940, current query_dis: 6, C.V.size:1683
+iter : 950, current query_dis: 6, C.V.size:1673
+iter : 960, current query_dis: 6, C.V.size:1663
+iter : 970, current query_dis: 6, C.V.size:1653
+iter : 980, current query_dis: 6, C.V.size:1643
+iter : 990, current query_dis: 6, C.V.size:1633
+iter : 1000, current query_dis: 6, C.V.size:1623
+iter : 1010, current query_dis: 6, C.V.size:1613
+iter : 1020, current query_dis: 5, C.V.size:1603
+iter : 1030, current query_dis: 5, C.V.size:1593
+iter : 1040, current query_dis: 5, C.V.size:1583
+iter : 1050, current query_dis: 5, C.V.size:1573
+iter : 1060, current query_dis: 5, C.V.size:1563
+iter : 1070, current query_dis: 5, C.V.size:1553
+iter : 1080, current query_dis: 5, C.V.size:1543
+iter : 1090, current query_dis: 5, C.V.size:1533
+iter : 1100, current query_dis: 5, C.V.size:1523
+iter : 1110, current query_dis: 5, C.V.size:1513
+iter : 1120, current query_dis: 5, C.V.size:1503
+iter : 1130, current query_dis: 5, C.V.size:1493
+iter : 1140, current query_dis: 5, C.V.size:1483
+iter : 1150, current query_dis: 5, C.V.size:1473
+iter : 1160, current query_dis: 5, C.V.size:1463
+iter : 1170, current query_dis: 5, C.V.size:1453
+iter : 1180, current query_dis: 5, C.V.size:1443
+iter : 1190, current query_dis: 5, C.V.size:1433
+iter : 1200, current query_dis: 5, C.V.size:1423
+iter : 1210, current query_dis: 5, C.V.size:1413
+iter : 1220, current query_dis: 5, C.V.size:1403
+iter : 1230, current query_dis: 5, C.V.size:1393
+iter : 1240, current query_dis: 5, C.V.size:1383
+iter : 1250, current query_dis: 5, C.V.size:1373
+iter : 1260, current query_dis: 5, C.V.size:1363
+iter : 1270, current query_dis: 5, C.V.size:1353
+iter : 1280, current query_dis: 5, C.V.size:1343
+iter : 1290, current query_dis: 5, C.V.size:1333
+iter : 1300, current query_dis: 5, C.V.size:1323
+iter : 1310, current query_dis: 5, C.V.size:1313
+iter : 1320, current query_dis: 5, C.V.size:1303
+iter : 1330, current query_dis: 5, C.V.size:1293
+iter : 1340, current query_dis: 5, C.V.size:1283
+iter : 1350, current query_dis: 5, C.V.size:1273
+iter : 1360, current query_dis: 5, C.V.size:1263
+iter : 1370, current query_dis: 5, C.V.size:1253
+iter : 1380, current query_dis: 5, C.V.size:1243
+iter : 1390, current query_dis: 5, C.V.size:1233
+iter : 1400, current query_dis: 5, C.V.size:1223
+iter : 1410, current query_dis: 5, C.V.size:1213
+iter : 1420, current query_dis: 5, C.V.size:1203
+iter : 1430, current query_dis: 5, C.V.size:1193
+iter : 1440, current query_dis: 5, C.V.size:1183
+iter : 1450, current query_dis: 5, C.V.size:1173
+iter : 1460, current query_dis: 5, C.V.size:1163
+iter : 1470, current query_dis: 5, C.V.size:1153
+iter : 1480, current query_dis: 5, C.V.size:1143
+iter : 1490, current query_dis: 5, C.V.size:1133
+iter : 1500, current query_dis: 5, C.V.size:1123
+iter : 1510, current query_dis: 5, C.V.size:1113
+iter : 1520, current query_dis: 5, C.V.size:1103
+iter : 1530, current query_dis: 5, C.V.size:1093
+iter : 1540, current query_dis: 5, C.V.size:1083
+iter : 1550, current query_dis: 5, C.V.size:1073
+iter : 1560, current query_dis: 5, C.V.size:1063
+iter : 1570, current query_dis: 5, C.V.size:1053
+iter : 1580, current query_dis: 5, C.V.size:1043
+iter : 1590, current query_dis: 5, C.V.size:1033
+iter : 1600, current query_dis: 5, C.V.size:1023
+iter : 1610, current query_dis: 5, C.V.size:1013
+iter : 1620, current query_dis: 5, C.V.size:1003
+iter : 1630, current query_dis: 5, C.V.size:993
+iter : 1640, current query_dis: 5, C.V.size:983
+iter : 1650, current query_dis: 5, C.V.size:973
+iter : 1660, current query_dis: 5, C.V.size:963
+iter : 1670, current query_dis: 5, C.V.size:953
+iter : 1680, current query_dis: 5, C.V.size:943
+iter : 1690, current query_dis: 5, C.V.size:933
+iter : 1700, current query_dis: 5, C.V.size:923
+iter : 1710, current query_dis: 5, C.V.size:913
+iter : 1720, current query_dis: 5, C.V.size:903
+iter : 1730, current query_dis: 5, C.V.size:893
+iter : 1740, current query_dis: 5, C.V.size:883
+iter : 1750, current query_dis: 5, C.V.size:873
+iter : 1760, current query_dis: 5, C.V.size:863
+iter : 1770, current query_dis: 5, C.V.size:853
+iter : 1780, current query_dis: 5, C.V.size:843
+iter : 1790, current query_dis: 5, C.V.size:833
+iter : 1800, current query_dis: 5, C.V.size:823
+iter : 1810, current query_dis: 5, C.V.size:813
+iter : 1820, current query_dis: 4, C.V.size:803
+iter : 1830, current query_dis: 4, C.V.size:793
+iter : 1840, current query_dis: 4, C.V.size:783
+iter : 1850, current query_dis: 4, C.V.size:773
+iter : 1860, current query_dis: 4, C.V.size:763
+iter : 1870, current query_dis: 4, C.V.size:753
+iter : 1880, current query_dis: 4, C.V.size:743
+iter : 1890, current query_dis: 4, C.V.size:733
+iter : 1900, current query_dis: 4, C.V.size:723
+iter : 1910, current query_dis: 4, C.V.size:713
+iter : 1920, current query_dis: 4, C.V.size:703
+iter : 1930, current query_dis: 4, C.V.size:693
+iter : 1940, current query_dis: 4, C.V.size:683
+iter : 1950, current query_dis: 4, C.V.size:673
+iter : 1960, current query_dis: 4, C.V.size:663
+iter : 1970, current query_dis: 4, C.V.size:653
+iter : 1980, current query_dis: 4, C.V.size:643
+iter : 1990, current query_dis: 4, C.V.size:633
+iter : 2000, current query_dis: 4, C.V.size:623
+iter : 2010, current query_dis: 4, C.V.size:613
+iter : 2020, current query_dis: 4, C.V.size:603
+iter : 2030, current query_dis: 4, C.V.size:593
+iter : 2040, current query_dis: 4, C.V.size:583
+iter : 2050, current query_dis: 4, C.V.size:573
+iter : 2060, current query_dis: 4, C.V.size:563
+iter : 2070, current query_dis: 4, C.V.size:553
+iter : 2080, current query_dis: 4, C.V.size:543
+iter : 2090, current query_dis: 4, C.V.size:533
+iter : 2100, current query_dis: 4, C.V.size:523
+iter : 2110, current query_dis: 4, C.V.size:513
+iter : 2120, current query_dis: 4, C.V.size:503
+iter : 2130, current query_dis: 4, C.V.size:493
+iter : 2140, current query_dis: 4, C.V.size:483
+iter : 2150, current query_dis: 4, C.V.size:473
+iter : 2160, current query_dis: 4, C.V.size:463
+iter : 2170, current query_dis: 4, C.V.size:453
+iter : 2180, current query_dis: 4, C.V.size:443
+iter : 2190, current query_dis: 4, C.V.size:433
+iter : 2200, current query_dis: 4, C.V.size:423
+iter : 2210, current query_dis: 4, C.V.size:413
+iter : 2220, current query_dis: 4, C.V.size:403
+iter : 2230, current query_dis: 4, C.V.size:393
+iter : 2240, current query_dis: 4, C.V.size:383
+iter : 2250, current query_dis: 4, C.V.size:373
+iter : 2260, current query_dis: 4, C.V.size:363
+iter : 2270, current query_dis: 4, C.V.size:353
+iter : 2280, current query_dis: 4, C.V.size:343
+iter : 2290, current query_dis: 4, C.V.size:333
+iter : 2300, current query_dis: 4, C.V.size:323
+iter : 2310, current query_dis: 4, C.V.size:313
+iter : 2320, current query_dis: 4, C.V.size:303
+iter : 2330, current query_dis: 4, C.V.size:293
+iter : 2340, current query_dis: 4, C.V.size:283
+iter : 2350, current query_dis: 4, C.V.size:273
+iter : 2360, current query_dis: 4, C.V.size:263
+iter : 2370, current query_dis: 3, C.V.size:253
+iter : 2380, current query_dis: 3, C.V.size:243
+iter : 2390, current query_dis: 3, C.V.size:233
+iter : 2400, current query_dis: 3, C.V.size:223
+iter : 2410, current query_dis: 3, C.V.size:213
+iter : 2420, current query_dis: 3, C.V.size:203
+iter : 2430, current query_dis: 3, C.V.size:193
+iter : 2440, current query_dis: 3, C.V.size:183
+iter : 2450, current query_dis: 3, C.V.size:173
+iter : 2460, current query_dis: 3, C.V.size:163
+iter : 2470, current query_dis: 3, C.V.size:153
+iter : 2480, current query_dis: 2, C.V.size:143
+Distance time: 2.13626s.
+Maintain time: 0.007055s.
+Delete running time: 6.48698s.
+Loading ../Dataset/facebook_A4/facebook_A4.txt
+Reading finished.
+Truss decomposition running...
+Support computed!
+Computing trussness!
+Current trussness : 3.
+Current trussness : 4.
+Current trussness : 5.
+Current trussness : 6.
+Current trussness : 7.
+Current trussness : 8.
+Current trussness : 9.
+Current trussness : 10.
+Current trussness : 11.
+Current trussness : 12.
+Current trussness : 13.
+Current trussness : 14.
+Current trussness : 15.
+Current trussness : 16.
+Current trussness : 17.
+Current trussness : 18.
+Current trussness : 19.
+Current trussness : 20.
+Current trussness : 21.
+Current trussness : 22.
+Current trussness : 23.
+Current trussness : 24.
+Current trussness : 25.
+Current trussness : 26.
+Current trussness : 27.
+Current trussness : 28.
+Current trussness : 29.
+Current trussness : 30.
+Current trussness : 31.
+Current trussness : 32.
+Current trussness : 33.
+Current trussness : 34.
+Current trussness : 35.
+Current trussness : 36.
+Current trussness : 37.
+Current trussness : 38.
+Current trussness : 39.
+Current trussness : 40.
+Current trussness : 41.
+Current trussness : 42.
+Current trussness : 43.
+Current trussness : 44.
+Current trussness : 45.
+Current trussness : 46.
+Current trussness : 47.
+Current trussness : 48.
+Current trussness : 49.
+Current trussness : 50.
+Current trussness : 51.
+Current trussness : 52.
+Current trussness : 53.
+Current trussness : 54.
+Current trussness : 55.
+Current trussness : 56.
+Current trussness : 57.
+Current trussness : 58.
+Current trussness : 59.
+Current trussness : 60.
+Current trussness : 61.
+Current trussness : 62.
+Current trussness : 63.
+Current trussness : 64.
+Current trussness : 65.
+Current trussness : 66.
+Current trussness : 67.
+Current trussness : 68.
+Current trussness : 69.
+Current trussness : 70.
+Current trussness : 71.
+Current trussness : 72.
+Current trussness : 73.
+Current trussness : 74.
+Current trussness : 75.
+Current trussness : 76.
+Current trussness : 77.
+Current trussness : 78.
+Current trussness : 79.
+Current trussness : 80.
+Current trussness : 81.
+Current trussness : 82.
+Current trussness : 83.
+Current trussness : 84.
+Current trussness : 85.
+Current trussness : 86.
+Current trussness : 87.
+Current trussness : 88.
+Current trussness : 89.
+Current trussness : 90.
+Current trussness : 91.
+Current trussness : 92.
+Current trussness : 93.
+Current trussness : 94.
+Current trussness : 95.
+Current trussness : 96.
+Current trussness : 97.
+Truss decomposition finished.
+FTCS running...
+lk : 2 , rk : 11, fairness:80
+lk : 7 , rk : 11, fairness:80
+lk : 10 , rk : 11, fairness:80
+C.V size: 133
+Binary search running time: 0.018135s.
+iter : 10, current query_dis: 2, C.V.size:124
+iter : 20, current query_dis: 2, C.V.size:114
+Distance time: 0.019077s.
+Maintain time: 6.6e-05s.
+Delete running time: 0.061923s.
+Loading ../Dataset/facebook_A4/facebook_A4.txt
+Reading finished.
+Truss decomposition running...
+Support computed!
+Computing trussness!
+Current trussness : 3.
+Current trussness : 4.
+Current trussness : 5.
+Current trussness : 6.
+Current trussness : 7.
+Current trussness : 8.
+Current trussness : 9.
+Current trussness : 10.
+Current trussness : 11.
+Current trussness : 12.
+Current trussness : 13.
+Current trussness : 14.
+Current trussness : 15.
+Current trussness : 16.
+Current trussness : 17.
+Current trussness : 18.
+Current trussness : 19.
+Current trussness : 20.
+Current trussness : 21.
+Current trussness : 22.
+Current trussness : 23.
+Current trussness : 24.
+Current trussness : 25.
+Current trussness : 26.
+Current trussness : 27.
+Current trussness : 28.
+Current trussness : 29.
+Current trussness : 30.
+Current trussness : 31.
+Current trussness : 32.
+Current trussness : 33.
+Current trussness : 34.
+Current trussness : 35.
+Current trussness : 36.
+Current trussness : 37.
+Current trussness : 38.
+Current trussness : 39.
+Current trussness : 40.
+Current trussness : 41.
+Current trussness : 42.
+Current trussness : 43.
+Current trussness : 44.
+Current trussness : 45.
+Current trussness : 46.
+Current trussness : 47.
+Current trussness : 48.
+Current trussness : 49.
+Current trussness : 50.
+Current trussness : 51.
+Current trussness : 52.
+Current trussness : 53.
+Current trussness : 54.
+Current trussness : 55.
+Current trussness : 56.
+Current trussness : 57.
+Current trussness : 58.
+Current trussness : 59.
+Current trussness : 60.
+Current trussness : 61.
+Current trussness : 62.
+Current trussness : 63.
+Current trussness : 64.
+Current trussness : 65.
+Current trussness : 66.
+Current trussness : 67.
+Current trussness : 68.
+Current trussness : 69.
+Current trussness : 70.
+Current trussness : 71.
+Current trussness : 72.
+Current trussness : 73.
+Current trussness : 74.
+Current trussness : 75.
+Current trussness : 76.
+Current trussness : 77.
+Current trussness : 78.
+Current trussness : 79.
+Current trussness : 80.
+Current trussness : 81.
+Current trussness : 82.
+Current trussness : 83.
+Current trussness : 84.
+Current trussness : 85.
+Current trussness : 86.
+Current trussness : 87.
+Current trussness : 88.
+Current trussness : 89.
+Current trussness : 90.
+Current trussness : 91.
+Current trussness : 92.
+Current trussness : 93.
+Current trussness : 94.
+Current trussness : 95.
+Current trussness : 96.
+Current trussness : 97.
+Truss decomposition finished.
+FTCS running...
+lk : 2 , rk : 15, fairness:80
+lk : 9 , rk : 15, fairness:73
+lk : 9 , rk : 12, fairness:80
+lk : 11 , rk : 12, fairness:79
+C.V size: 133
+Binary search running time: 0.017176s.
+iter : 10, current query_dis: 2, C.V.size:124
+iter : 20, current query_dis: 2, C.V.size:114
+Distance time: 0.02161s.
+Maintain time: 8.3e-05s.
+Delete running time: 0.06952s.
+Loading ../Dataset/dblp_A4/dblp_A4.txt
+Reading edge 19.0501%.
+Reading edge 38.1001%.
+Reading edge 57.1502%.
+Reading edge 76.2002%.
+Reading edge 95.2503%.
+Reading finished.
+Truss decomposition running...
+Computing support 15.7689%.
+Computing support 31.5378%.
+Computing support 47.3067%.
+Computing support 63.0756%.
+Computing support 78.8445%.
+Computing support 94.6133%.
+Support computed!
+Computing trussness!
+Current trussness : 3.
+Current trussness : 4.
+Current trussness : 5.
+Current trussness : 6.
+Current trussness : 7.
+Current trussness : 8.
+Current trussness : 9.
+Current trussness : 10.
+Current trussness : 11.
+Current trussness : 12.
+Current trussness : 13.
+Current trussness : 14.
+Current trussness : 15.
+Current trussness : 16.
+Current trussness : 17.
+Current trussness : 18.
+Current trussness : 19.
+Current trussness : 20.
+Current trussness : 21.
+Current trussness : 22.
+Current trussness : 23.
+Current trussness : 24.
+Current trussness : 25.
+Current trussness : 26.
+Current trussness : 27.
+Current trussness : 28.
+Current trussness : 29.
+Current trussness : 30.
+Current trussness : 31.
+Current trussness : 32.
+Current trussness : 33.
+Current trussness : 34.
+Current trussness : 35.
+Current trussness : 36.
+Current trussness : 37.
+Current trussness : 39.
+Current trussness : 40.
+Current trussness : 43.
+Current trussness : 44.
+Current trussness : 48.
+Current trussness : 49.
+Current trussness : 52.
+Current trussness : 63.
+Current trussness : 65.
+Current trussness : 102.
+Current trussness : 114.
+Truss decomposition finished.
+FTCS running...
+lk : 2 , rk : 19, fairness:80
+lk : 11 , rk : 19, fairness:75
+lk : 11 , rk : 15, fairness:75
+lk : 11 , rk : 13, fairness:75
+lk : 11 , rk : 12, fairness:80
+C.V size: 129
+Binary search running time: 0.0763s.
+iter : 10, current query_dis: 5, C.V.size:120
+iter : 20, current query_dis: 4, C.V.size:110
+Distance time: 0.0172s.
+Maintain time: 0.0001s.
+Delete running time: 0.0552s.
+Loading ../Dataset/dblp_A4/dblp_A4.txt
+Reading edge 19.0501%.
+Reading edge 38.1001%.
+Reading edge 57.1502%.
+Reading edge 76.2002%.
+Reading edge 95.2503%.
+Reading finished.
+Truss decomposition running...
+Computing support 15.7689%.
+Computing support 31.5378%.
+Computing support 47.3067%.
+Computing support 63.0756%.
+Computing support 78.8445%.
+Computing support 94.6133%.
+Support computed!
+Computing trussness!
+Current trussness : 3.
+Current trussness : 4.
+Current trussness : 5.
+Current trussness : 6.
+Current trussness : 7.
+Current trussness : 8.
+Current trussness : 9.
+Current trussness : 10.
+Current trussness : 11.
+Current trussness : 12.
+Current trussness : 13.
+Current trussness : 14.
+Current trussness : 15.
+Current trussness : 16.
+Current trussness : 17.
+Current trussness : 18.
+Current trussness : 19.
+Current trussness : 20.
+Current trussness : 21.
+Current trussness : 22.
+Current trussness : 23.
+Current trussness : 24.
+Current trussness : 25.
+Current trussness : 26.
+Current trussness : 27.
+Current trussness : 28.
+Current trussness : 29.
+Current trussness : 30.
+Current trussness : 31.
+Current trussness : 32.
+Current trussness : 33.
+Current trussness : 34.
+Current trussness : 35.
+Current trussness : 36.
+Current trussness : 37.
+Current trussness : 39.
+Current trussness : 40.
+Current trussness : 43.
+Current trussness : 44.
+Current trussness : 48.
+Current trussness : 49.
+Current trussness : 52.
+Current trussness : 63.
+Current trussness : 65.
+Current trussness : 102.
+Current trussness : 114.
+Truss decomposition finished.
+FTCS running...
+lk : 2 , rk : 19, fairness:80
+lk : 11 , rk : 19, fairness:80
+lk : 16 , rk : 19, fairness:80
+lk : 18 , rk : 19, fairness:80
+C.V size: 562
+Binary search running time: 0.0796s.
+iter : 10, current query_dis: 7, C.V.size:553
+iter : 20, current query_dis: 7, C.V.size:543
+iter : 30, current query_dis: 6, C.V.size:533
+iter : 40, current query_dis: 6, C.V.size:523
+iter : 50, current query_dis: 6, C.V.size:513
+iter : 60, current query_dis: 5, C.V.size:503
+iter : 70, current query_dis: 5, C.V.size:493
+iter : 80, current query_dis: 5, C.V.size:483
+iter : 90, current query_dis: 5, C.V.size:473
+iter : 100, current query_dis: 5, C.V.size:463
+iter : 110, current query_dis: 5, C.V.size:453
+iter : 120, current query_dis: 5, C.V.size:443
+iter : 130, current query_dis: 5, C.V.size:433
+iter : 140, current query_dis: 4, C.V.size:423
+iter : 150, current query_dis: 4, C.V.size:413
+iter : 160, current query_dis: 4, C.V.size:403
+iter : 170, current query_dis: 4, C.V.size:393
+iter : 180, current query_dis: 4, C.V.size:383
+iter : 190, current query_dis: 4, C.V.size:373
+iter : 200, current query_dis: 4, C.V.size:363
+iter : 210, current query_dis: 4, C.V.size:353
+iter : 220, current query_dis: 4, C.V.size:343
+iter : 230, current query_dis: 4, C.V.size:333
+iter : 240, current query_dis: 4, C.V.size:323
+iter : 250, current query_dis: 4, C.V.size:313
+iter : 260, current query_dis: 4, C.V.size:303
+iter : 270, current query_dis: 4, C.V.size:293
+iter : 280, current query_dis: 4, C.V.size:283
+iter : 290, current query_dis: 4, C.V.size:273
+iter : 300, current query_dis: 4, C.V.size:263
+iter : 310, current query_dis: 4, C.V.size:253
+iter : 320, current query_dis: 4, C.V.size:243
+iter : 330, current query_dis: 3, C.V.size:233
+iter : 340, current query_dis: 3, C.V.size:223
+iter : 350, current query_dis: 3, C.V.size:213
+iter : 360, current query_dis: 3, C.V.size:203
+iter : 370, current query_dis: 3, C.V.size:193
+iter : 380, current query_dis: 3, C.V.size:183
+iter : 390, current query_dis: 3, C.V.size:173
+iter : 400, current query_dis: 3, C.V.size:163
+iter : 410, current query_dis: 3, C.V.size:153
+iter : 420, current query_dis: 3, C.V.size:143
+iter : 430, current query_dis: 3, C.V.size:133
+iter : 440, current query_dis: 3, C.V.size:123
+iter : 450, current query_dis: 3, C.V.size:113
+Distance time: 0.2906s.
+Maintain time: 0.0017s.
+Delete running time: 0.9048s.
+Loading ../Dataset/dblp_A4/dblp_A4.txt
+Reading edge 19.0501%.
+Reading edge 38.1001%.
+Reading edge 57.1502%.
+Reading edge 76.2002%.
+Reading edge 95.2503%.
+Reading finished.
+Truss decomposition running...
+Computing support 15.7689%.
+Computing support 31.5378%.
+Computing support 47.3067%.
+Computing support 63.0756%.
+Computing support 78.8445%.
+Computing support 94.6133%.
+Support computed!
+Computing trussness!
+Current trussness : 3.
+Current trussness : 4.
+Current trussness : 5.
+Current trussness : 6.
+Current trussness : 7.
+Current trussness : 8.
+Current trussness : 9.
+Current trussness : 10.
+Current trussness : 11.
+Current trussness : 12.
+Current trussness : 13.
+Current trussness : 14.
+Current trussness : 15.
+Current trussness : 16.
+Current trussness : 17.
+Current trussness : 18.
+Current trussness : 19.
+Current trussness : 20.
+Current trussness : 21.
+Current trussness : 22.
+Current trussness : 23.
+Current trussness : 24.
+Current trussness : 25.
+Current trussness : 26.
+Current trussness : 27.
+Current trussness : 28.
+Current trussness : 29.
+Current trussness : 30.
+Current trussness : 31.
+Current trussness : 32.
+Current trussness : 33.
+Current trussness : 34.
+Current trussness : 35.
+Current trussness : 36.
+Current trussness : 37.
+Current trussness : 39.
+Current trussness : 40.
+Current trussness : 43.
+Current trussness : 44.
+Current trussness : 48.
+Current trussness : 49.
+Current trussness : 52.
+Current trussness : 63.
+Current trussness : 65.
+Current trussness : 102.
+Current trussness : 114.
+Truss decomposition finished.
+FTCS running...
+lk : 2 , rk : 18, fairness:80
+lk : 11 , rk : 18, fairness:24
+lk : 11 , rk : 14, fairness:24
+lk : 11 , rk : 12, fairness:80
+C.V size: 7333
+Binary search running time: 0.1035s.
+iter : 10, current query_dis: 13, C.V.size:7324
+iter : 20, current query_dis: 13, C.V.size:7314
+iter : 30, current query_dis: 12, C.V.size:7304
+iter : 40, current query_dis: 12, C.V.size:7294
+iter : 50, current query_dis: 12, C.V.size:7284
+iter : 60, current query_dis: 12, C.V.size:7274
+iter : 70, current query_dis: 12, C.V.size:7264
+iter : 80, current query_dis: 12, C.V.size:7254
+iter : 90, current query_dis: 12, C.V.size:7244
+iter : 100, current query_dis: 12, C.V.size:7234
+iter : 110, current query_dis: 12, C.V.size:7224
+iter : 120, current query_dis: 11, C.V.size:7214
+iter : 130, current query_dis: 11, C.V.size:7204
+iter : 140, current query_dis: 11, C.V.size:7194
+iter : 150, current query_dis: 11, C.V.size:7184
+iter : 160, current query_dis: 11, C.V.size:7174
+iter : 170, current query_dis: 11, C.V.size:7164
+iter : 180, current query_dis: 11, C.V.size:7154
+iter : 190, current query_dis: 11, C.V.size:7144
+iter : 200, current query_dis: 11, C.V.size:7134
+iter : 210, current query_dis: 11, C.V.size:7124
+iter : 220, current query_dis: 11, C.V.size:7114
+iter : 230, current query_dis: 11, C.V.size:7104
+iter : 240, current query_dis: 11, C.V.size:7094
+iter : 250, current query_dis: 11, C.V.size:7084
+iter : 260, current query_dis: 11, C.V.size:7074
+iter : 270, current query_dis: 11, C.V.size:7064
+iter : 280, current query_dis: 11, C.V.size:7054
+iter : 290, current query_dis: 11, C.V.size:7044
+iter : 300, current query_dis: 11, C.V.size:7034
+iter : 310, current query_dis: 11, C.V.size:7024
+iter : 320, current query_dis: 11, C.V.size:7014
+iter : 330, current query_dis: 11, C.V.size:7004
+iter : 340, current query_dis: 11, C.V.size:6994
+iter : 350, current query_dis: 11, C.V.size:6984
+iter : 360, current query_dis: 10, C.V.size:6974
+iter : 370, current query_dis: 10, C.V.size:6964
+iter : 380, current query_dis: 10, C.V.size:6954
+iter : 390, current query_dis: 10, C.V.size:6944
+iter : 400, current query_dis: 10, C.V.size:6934
+iter : 410, current query_dis: 10, C.V.size:6924
+iter : 420, current query_dis: 10, C.V.size:6914
+iter : 430, current query_dis: 10, C.V.size:6904
+iter : 440, current query_dis: 10, C.V.size:6894
+iter : 450, current query_dis: 10, C.V.size:6884
+iter : 460, current query_dis: 10, C.V.size:6874
+iter : 470, current query_dis: 10, C.V.size:6864
+iter : 480, current query_dis: 10, C.V.size:6854
+iter : 490, current query_dis: 10, C.V.size:6844
+iter : 500, current query_dis: 10, C.V.size:6834
+iter : 510, current query_dis: 10, C.V.size:6824
+iter : 520, current query_dis: 10, C.V.size:6814
+iter : 530, current query_dis: 10, C.V.size:6804
+iter : 540, current query_dis: 10, C.V.size:6794
+iter : 550, current query_dis: 10, C.V.size:6784
+iter : 560, current query_dis: 10, C.V.size:6774
+iter : 570, current query_dis: 10, C.V.size:6764
+iter : 580, current query_dis: 10, C.V.size:6754
+iter : 590, current query_dis: 10, C.V.size:6744
+iter : 600, current query_dis: 10, C.V.size:6734
+iter : 610, current query_dis: 10, C.V.size:6724
+iter : 620, current query_dis: 10, C.V.size:6714
+iter : 630, current query_dis: 10, C.V.size:6704
+iter : 640, current query_dis: 10, C.V.size:6694
+iter : 650, current query_dis: 10, C.V.size:6684
+iter : 660, current query_dis: 10, C.V.size:6674
+iter : 670, current query_dis: 10, C.V.size:6664
+iter : 680, current query_dis: 10, C.V.size:6654
+iter : 690, current query_dis: 10, C.V.size:6644
+iter : 700, current query_dis: 10, C.V.size:6634
+iter : 710, current query_dis: 10, C.V.size:6624
+iter : 720, current query_dis: 10, C.V.size:6614
+iter : 730, current query_dis: 10, C.V.size:6604
+iter : 740, current query_dis: 10, C.V.size:6594
+iter : 750, current query_dis: 10, C.V.size:6584
+iter : 760, current query_dis: 10, C.V.size:6574
+iter : 770, current query_dis: 10, C.V.size:6564
+iter : 780, current query_dis: 10, C.V.size:6554
+iter : 790, current query_dis: 10, C.V.size:6544
+iter : 800, current query_dis: 10, C.V.size:6534
+iter : 810, current query_dis: 10, C.V.size:6524
+iter : 820, current query_dis: 10, C.V.size:6514
+iter : 830, current query_dis: 10, C.V.size:6504
+iter : 840, current query_dis: 10, C.V.size:6494
+iter : 850, current query_dis: 10, C.V.size:6484
+iter : 860, current query_dis: 10, C.V.size:6474
+iter : 870, current query_dis: 10, C.V.size:6464
+iter : 880, current query_dis: 10, C.V.size:6454
+iter : 890, current query_dis: 10, C.V.size:6444
+iter : 900, current query_dis: 10, C.V.size:6434
+iter : 910, current query_dis: 10, C.V.size:6424
+iter : 920, current query_dis: 10, C.V.size:6414
+iter : 930, current query_dis: 10, C.V.size:6404
+iter : 940, current query_dis: 10, C.V.size:6394
+iter : 950, current query_dis: 10, C.V.size:6384
+iter : 960, current query_dis: 10, C.V.size:6374
+iter : 970, current query_dis: 10, C.V.size:6364
+iter : 980, current query_dis: 10, C.V.size:6354
+iter : 990, current query_dis: 10, C.V.size:6344
+iter : 1000, current query_dis: 10, C.V.size:6334
+iter : 1010, current query_dis: 10, C.V.size:6324
+iter : 1020, current query_dis: 10, C.V.size:6314
+iter : 1030, current query_dis: 10, C.V.size:6304
+iter : 1040, current query_dis: 10, C.V.size:6294
+iter : 1050, current query_dis: 9, C.V.size:6284
+iter : 1060, current query_dis: 9, C.V.size:6274
+iter : 1070, current query_dis: 9, C.V.size:6264
+iter : 1080, current query_dis: 9, C.V.size:6254
+iter : 1090, current query_dis: 9, C.V.size:6244
+iter : 1100, current query_dis: 9, C.V.size:6234
+iter : 1110, current query_dis: 9, C.V.size:6224
+iter : 1120, current query_dis: 9, C.V.size:6214
+iter : 1130, current query_dis: 9, C.V.size:6204
+iter : 1140, current query_dis: 9, C.V.size:6194
+iter : 1150, current query_dis: 9, C.V.size:6184
+iter : 1160, current query_dis: 9, C.V.size:6174
+iter : 1170, current query_dis: 9, C.V.size:6164
+iter : 1180, current query_dis: 9, C.V.size:6154
+iter : 1190, current query_dis: 9, C.V.size:6144
+iter : 1200, current query_dis: 9, C.V.size:6134
+iter : 1210, current query_dis: 9, C.V.size:6124
+iter : 1220, current query_dis: 9, C.V.size:6114
+iter : 1230, current query_dis: 9, C.V.size:6104
+iter : 1240, current query_dis: 9, C.V.size:6094
+iter : 1250, current query_dis: 9, C.V.size:6084
+iter : 1260, current query_dis: 9, C.V.size:6074
+iter : 1270, current query_dis: 9, C.V.size:6064
+iter : 1280, current query_dis: 9, C.V.size:6054
+iter : 1290, current query_dis: 9, C.V.size:6044
+iter : 1300, current query_dis: 9, C.V.size:6034
+iter : 1310, current query_dis: 9, C.V.size:6024
+iter : 1320, current query_dis: 9, C.V.size:6014
+iter : 1330, current query_dis: 9, C.V.size:6004
+iter : 1340, current query_dis: 9, C.V.size:5994
+iter : 1350, current query_dis: 9, C.V.size:5984
+iter : 1360, current query_dis: 9, C.V.size:5974
+iter : 1370, current query_dis: 9, C.V.size:5964
+iter : 1380, current query_dis: 9, C.V.size:5954
+iter : 1390, current query_dis: 9, C.V.size:5944
+iter : 1400, current query_dis: 9, C.V.size:5934
+iter : 1410, current query_dis: 9, C.V.size:5924
+iter : 1420, current query_dis: 9, C.V.size:5914
+iter : 1430, current query_dis: 9, C.V.size:5904
+iter : 1440, current query_dis: 9, C.V.size:5894
+iter : 1450, current query_dis: 9, C.V.size:5884
+iter : 1460, current query_dis: 9, C.V.size:5874
+iter : 1470, current query_dis: 9, C.V.size:5864
+iter : 1480, current query_dis: 9, C.V.size:5854
+iter : 1490, current query_dis: 9, C.V.size:5844
+iter : 1500, current query_dis: 9, C.V.size:5834
+iter : 1510, current query_dis: 9, C.V.size:5824
+iter : 1520, current query_dis: 9, C.V.size:5814
+iter : 1530, current query_dis: 9, C.V.size:5804
+iter : 1540, current query_dis: 9, C.V.size:5794
+iter : 1550, current query_dis: 9, C.V.size:5784
+iter : 1560, current query_dis: 9, C.V.size:5774
+iter : 1570, current query_dis: 9, C.V.size:5764
+iter : 1580, current query_dis: 9, C.V.size:5754
+iter : 1590, current query_dis: 9, C.V.size:5744
+iter : 1600, current query_dis: 9, C.V.size:5734
+iter : 1610, current query_dis: 9, C.V.size:5724
+iter : 1620, current query_dis: 9, C.V.size:5714
+iter : 1630, current query_dis: 9, C.V.size:5704
+iter : 1640, current query_dis: 9, C.V.size:5694
+iter : 1650, current query_dis: 9, C.V.size:5684
+iter : 1660, current query_dis: 9, C.V.size:5674
+iter : 1670, current query_dis: 9, C.V.size:5664
+iter : 1680, current query_dis: 9, C.V.size:5654
+iter : 1690, current query_dis: 9, C.V.size:5644
+iter : 1700, current query_dis: 9, C.V.size:5634
+iter : 1710, current query_dis: 9, C.V.size:5624
+iter : 1720, current query_dis: 9, C.V.size:5614
+iter : 1730, current query_dis: 9, C.V.size:5604
+iter : 1740, current query_dis: 9, C.V.size:5594
+iter : 1750, current query_dis: 9, C.V.size:5584
+iter : 1760, current query_dis: 9, C.V.size:5574
+iter : 1770, current query_dis: 9, C.V.size:5564
+iter : 1780, current query_dis: 9, C.V.size:5554
+iter : 1790, current query_dis: 9, C.V.size:5544
+iter : 1800, current query_dis: 9, C.V.size:5534
+iter : 1810, current query_dis: 9, C.V.size:5524
+iter : 1820, current query_dis: 9, C.V.size:5514
+iter : 1830, current query_dis: 9, C.V.size:5504
+iter : 1840, current query_dis: 9, C.V.size:5494
+iter : 1850, current query_dis: 9, C.V.size:5484
+iter : 1860, current query_dis: 9, C.V.size:5474
+iter : 1870, current query_dis: 9, C.V.size:5464
+iter : 1880, current query_dis: 9, C.V.size:5454
+iter : 1890, current query_dis: 9, C.V.size:5444
+iter : 1900, current query_dis: 9, C.V.size:5434
+iter : 1910, current query_dis: 9, C.V.size:5424
+iter : 1920, current query_dis: 9, C.V.size:5414
+iter : 1930, current query_dis: 9, C.V.size:5404
+iter : 1940, current query_dis: 9, C.V.size:5394
+iter : 1950, current query_dis: 9, C.V.size:5384
+iter : 1960, current query_dis: 9, C.V.size:5374
+iter : 1970, current query_dis: 9, C.V.size:5364
+iter : 1980, current query_dis: 9, C.V.size:5354
+iter : 1990, current query_dis: 9, C.V.size:5344
+iter : 2000, current query_dis: 9, C.V.size:5334
+iter : 2010, current query_dis: 9, C.V.size:5324
+iter : 2020, current query_dis: 9, C.V.size:5314
+iter : 2030, current query_dis: 9, C.V.size:5304
+iter : 2040, current query_dis: 9, C.V.size:5294
+iter : 2050, current query_dis: 9, C.V.size:5284
+iter : 2060, current query_dis: 9, C.V.size:5274
+iter : 2070, current query_dis: 9, C.V.size:5264
+iter : 2080, current query_dis: 9, C.V.size:5254
+iter : 2090, current query_dis: 9, C.V.size:5244
+iter : 2100, current query_dis: 9, C.V.size:5234
+iter : 2110, current query_dis: 9, C.V.size:5224
+iter : 2120, current query_dis: 9, C.V.size:5214
+iter : 2130, current query_dis: 9, C.V.size:5204
+iter : 2140, current query_dis: 9, C.V.size:5194
+iter : 2150, current query_dis: 9, C.V.size:5184
+iter : 2160, current query_dis: 9, C.V.size:5174
+iter : 2170, current query_dis: 9, C.V.size:5164
+iter : 2180, current query_dis: 9, C.V.size:5154
+iter : 2190, current query_dis: 9, C.V.size:5144
+iter : 2200, current query_dis: 9, C.V.size:5134
+iter : 2210, current query_dis: 9, C.V.size:5124
+iter : 2220, current query_dis: 9, C.V.size:5114
+iter : 2230, current query_dis: 9, C.V.size:5104
+iter : 2240, current query_dis: 9, C.V.size:5094
+iter : 2250, current query_dis: 8, C.V.size:5084
+iter : 2260, current query_dis: 8, C.V.size:5074
+iter : 2270, current query_dis: 8, C.V.size:5064
+iter : 2280, current query_dis: 8, C.V.size:5054
+iter : 2290, current query_dis: 8, C.V.size:5044
+iter : 2300, current query_dis: 8, C.V.size:5034
+iter : 2310, current query_dis: 8, C.V.size:5024
+iter : 2320, current query_dis: 8, C.V.size:5014
+iter : 2330, current query_dis: 8, C.V.size:5004
+iter : 2340, current query_dis: 8, C.V.size:4994
+iter : 2350, current query_dis: 8, C.V.size:4984
+iter : 2360, current query_dis: 8, C.V.size:4974
+iter : 2370, current query_dis: 8, C.V.size:4964
+iter : 2380, current query_dis: 8, C.V.size:4954
+iter : 2390, current query_dis: 8, C.V.size:4944
+iter : 2400, current query_dis: 8, C.V.size:4934
+iter : 2410, current query_dis: 8, C.V.size:4924
+iter : 2420, current query_dis: 8, C.V.size:4914
+iter : 2430, current query_dis: 8, C.V.size:4904
+iter : 2440, current query_dis: 8, C.V.size:4894
+iter : 2450, current query_dis: 8, C.V.size:4884
+iter : 2460, current query_dis: 8, C.V.size:4874
+iter : 2470, current query_dis: 8, C.V.size:4864
+iter : 2480, current query_dis: 8, C.V.size:4854
+iter : 2490, current query_dis: 8, C.V.size:4844
+iter : 2500, current query_dis: 8, C.V.size:4834
+iter : 2510, current query_dis: 8, C.V.size:4824
+iter : 2520, current query_dis: 8, C.V.size:4814
+iter : 2530, current query_dis: 8, C.V.size:4804
+iter : 2540, current query_dis: 8, C.V.size:4794
+iter : 2550, current query_dis: 8, C.V.size:4784
+iter : 2560, current query_dis: 8, C.V.size:4774
+iter : 2570, current query_dis: 8, C.V.size:4764
+iter : 2580, current query_dis: 8, C.V.size:4754
+iter : 2590, current query_dis: 8, C.V.size:4744
+iter : 2600, current query_dis: 8, C.V.size:4734
+iter : 2610, current query_dis: 8, C.V.size:4724
+iter : 2620, current query_dis: 8, C.V.size:4714
+iter : 2630, current query_dis: 8, C.V.size:4704
+iter : 2640, current query_dis: 8, C.V.size:4694
+iter : 2650, current query_dis: 8, C.V.size:4684
+iter : 2660, current query_dis: 8, C.V.size:4674
+iter : 2670, current query_dis: 8, C.V.size:4664
+iter : 2680, current query_dis: 8, C.V.size:4654
+iter : 2690, current query_dis: 8, C.V.size:4644
+iter : 2700, current query_dis: 8, C.V.size:4634
+iter : 2710, current query_dis: 8, C.V.size:4624
+iter : 2720, current query_dis: 8, C.V.size:4614
+iter : 2730, current query_dis: 8, C.V.size:4604
+iter : 2740, current query_dis: 8, C.V.size:4594
+iter : 2750, current query_dis: 8, C.V.size:4584
+iter : 2760, current query_dis: 8, C.V.size:4574
+iter : 2770, current query_dis: 8, C.V.size:4564
+iter : 2780, current query_dis: 8, C.V.size:4554
+iter : 2790, current query_dis: 8, C.V.size:4544
+iter : 2800, current query_dis: 8, C.V.size:4534
+iter : 2810, current query_dis: 8, C.V.size:4524
+iter : 2820, current query_dis: 8, C.V.size:4514
+iter : 2830, current query_dis: 8, C.V.size:4504
+iter : 2840, current query_dis: 8, C.V.size:4494
+iter : 2850, current query_dis: 8, C.V.size:4484
+iter : 2860, current query_dis: 8, C.V.size:4474
+iter : 2870, current query_dis: 8, C.V.size:4464
+iter : 2880, current query_dis: 8, C.V.size:4454
+iter : 2890, current query_dis: 8, C.V.size:4444
+iter : 2900, current query_dis: 8, C.V.size:4434
+iter : 2910, current query_dis: 8, C.V.size:4424
+iter : 2920, current query_dis: 8, C.V.size:4414
+iter : 2930, current query_dis: 8, C.V.size:4404
+iter : 2940, current query_dis: 8, C.V.size:4394
+iter : 2950, current query_dis: 8, C.V.size:4384
+iter : 2960, current query_dis: 8, C.V.size:4374
+iter : 2970, current query_dis: 8, C.V.size:4364
+iter : 2980, current query_dis: 8, C.V.size:4354
+iter : 2990, current query_dis: 8, C.V.size:4344
+iter : 3000, current query_dis: 8, C.V.size:4334
+iter : 3010, current query_dis: 8, C.V.size:4324
+iter : 3020, current query_dis: 8, C.V.size:4314
+iter : 3030, current query_dis: 8, C.V.size:4304
+iter : 3040, current query_dis: 8, C.V.size:4294
+iter : 3050, current query_dis: 8, C.V.size:4284
+iter : 3060, current query_dis: 8, C.V.size:4274
+iter : 3070, current query_dis: 8, C.V.size:4264
+iter : 3080, current query_dis: 8, C.V.size:4254
+iter : 3090, current query_dis: 8, C.V.size:4244
+iter : 3100, current query_dis: 8, C.V.size:4234
+iter : 3110, current query_dis: 8, C.V.size:4224
+iter : 3120, current query_dis: 8, C.V.size:4214
+iter : 3130, current query_dis: 8, C.V.size:4204
+iter : 3140, current query_dis: 8, C.V.size:4194
+iter : 3150, current query_dis: 8, C.V.size:4184
+iter : 3160, current query_dis: 8, C.V.size:4174
+iter : 3170, current query_dis: 8, C.V.size:4164
+iter : 3180, current query_dis: 8, C.V.size:4154
+iter : 3190, current query_dis: 8, C.V.size:4144
+iter : 3200, current query_dis: 8, C.V.size:4134
+iter : 3210, current query_dis: 8, C.V.size:4124
+iter : 3220, current query_dis: 8, C.V.size:4114
+iter : 3230, current query_dis: 8, C.V.size:4104
+iter : 3240, current query_dis: 8, C.V.size:4094
+iter : 3250, current query_dis: 8, C.V.size:4084
+iter : 3260, current query_dis: 8, C.V.size:4074
+iter : 3270, current query_dis: 8, C.V.size:4064
+iter : 3280, current query_dis: 8, C.V.size:4054
+iter : 3290, current query_dis: 8, C.V.size:4044
+iter : 3300, current query_dis: 8, C.V.size:4034
+iter : 3310, current query_dis: 8, C.V.size:4024
+iter : 3320, current query_dis: 8, C.V.size:4014
+iter : 3330, current query_dis: 8, C.V.size:4004
+iter : 3340, current query_dis: 8, C.V.size:3994
+iter : 3350, current query_dis: 8, C.V.size:3984
+iter : 3360, current query_dis: 8, C.V.size:3974
+iter : 3370, current query_dis: 8, C.V.size:3964
+iter : 3380, current query_dis: 8, C.V.size:3954
+iter : 3390, current query_dis: 8, C.V.size:3944
+iter : 3400, current query_dis: 8, C.V.size:3934
+iter : 3410, current query_dis: 8, C.V.size:3924
+iter : 3420, current query_dis: 8, C.V.size:3914
+iter : 3430, current query_dis: 8, C.V.size:3904
+iter : 3440, current query_dis: 8, C.V.size:3894
+iter : 3450, current query_dis: 8, C.V.size:3884
+iter : 3460, current query_dis: 8, C.V.size:3874
+iter : 3470, current query_dis: 8, C.V.size:3864
+iter : 3480, current query_dis: 8, C.V.size:3854
+iter : 3490, current query_dis: 8, C.V.size:3844
+iter : 3500, current query_dis: 8, C.V.size:3834
+iter : 3510, current query_dis: 8, C.V.size:3824
+iter : 3520, current query_dis: 8, C.V.size:3814
+iter : 3530, current query_dis: 8, C.V.size:3804
+iter : 3540, current query_dis: 8, C.V.size:3794
+iter : 3550, current query_dis: 8, C.V.size:3784
+iter : 3560, current query_dis: 8, C.V.size:3774
+iter : 3570, current query_dis: 8, C.V.size:3764
+iter : 3580, current query_dis: 8, C.V.size:3754
+iter : 3590, current query_dis: 8, C.V.size:3744
+iter : 3600, current query_dis: 8, C.V.size:3734
+iter : 3610, current query_dis: 8, C.V.size:3724
+iter : 3620, current query_dis: 8, C.V.size:3714
+iter : 3630, current query_dis: 8, C.V.size:3704
+iter : 3640, current query_dis: 8, C.V.size:3694
+iter : 3650, current query_dis: 8, C.V.size:3684
+iter : 3660, current query_dis: 8, C.V.size:3674
+iter : 3670, current query_dis: 8, C.V.size:3664
+iter : 3680, current query_dis: 8, C.V.size:3654
+iter : 3690, current query_dis: 8, C.V.size:3644
+iter : 3700, current query_dis: 8, C.V.size:3634
+iter : 3710, current query_dis: 8, C.V.size:3624
+iter : 3720, current query_dis: 8, C.V.size:3614
+iter : 3730, current query_dis: 8, C.V.size:3604
+iter : 3740, current query_dis: 8, C.V.size:3594
+iter : 3750, current query_dis: 8, C.V.size:3584
+iter : 3760, current query_dis: 8, C.V.size:3574
+iter : 3770, current query_dis: 8, C.V.size:3564
+iter : 3780, current query_dis: 8, C.V.size:3554
+iter : 3790, current query_dis: 8, C.V.size:3544
+iter : 3800, current query_dis: 8, C.V.size:3534
+iter : 3810, current query_dis: 8, C.V.size:3524
+iter : 3820, current query_dis: 8, C.V.size:3514
+iter : 3830, current query_dis: 8, C.V.size:3504
+iter : 3840, current query_dis: 8, C.V.size:3494
+iter : 3850, current query_dis: 8, C.V.size:3484
+iter : 3860, current query_dis: 8, C.V.size:3474
+iter : 3870, current query_dis: 8, C.V.size:3464
+iter : 3880, current query_dis: 8, C.V.size:3454
+iter : 3890, current query_dis: 8, C.V.size:3444
+iter : 3900, current query_dis: 8, C.V.size:3434
+iter : 3910, current query_dis: 8, C.V.size:3424
+iter : 3920, current query_dis: 8, C.V.size:3414
+iter : 3930, current query_dis: 8, C.V.size:3404
+iter : 3940, current query_dis: 8, C.V.size:3394
+iter : 3950, current query_dis: 8, C.V.size:3384
+iter : 3960, current query_dis: 8, C.V.size:3374
+iter : 3970, current query_dis: 8, C.V.size:3364
+iter : 3980, current query_dis: 8, C.V.size:3354
+iter : 3990, current query_dis: 8, C.V.size:3344
+iter : 4000, current query_dis: 8, C.V.size:3334
+iter : 4010, current query_dis: 8, C.V.size:3324
+iter : 4020, current query_dis: 8, C.V.size:3314
+iter : 4030, current query_dis: 8, C.V.size:3304
+iter : 4040, current query_dis: 8, C.V.size:3294
+iter : 4050, current query_dis: 8, C.V.size:3284
+iter : 4060, current query_dis: 8, C.V.size:3274
+iter : 4070, current query_dis: 8, C.V.size:3264
+iter : 4080, current query_dis: 8, C.V.size:3254
+iter : 4090, current query_dis: 8, C.V.size:3244
+iter : 4100, current query_dis: 8, C.V.size:3234
+iter : 4110, current query_dis: 8, C.V.size:3224
+iter : 4120, current query_dis: 8, C.V.size:3214
+iter : 4130, current query_dis: 8, C.V.size:3204
+iter : 4140, current query_dis: 8, C.V.size:3194
+iter : 4150, current query_dis: 8, C.V.size:3184
+iter : 4160, current query_dis: 7, C.V.size:3174
+iter : 4170, current query_dis: 7, C.V.size:3164
+iter : 4180, current query_dis: 7, C.V.size:3154
+iter : 4190, current query_dis: 7, C.V.size:3144
+iter : 4200, current query_dis: 7, C.V.size:3134
+iter : 4210, current query_dis: 7, C.V.size:3124
+iter : 4220, current query_dis: 7, C.V.size:3114
+iter : 4230, current query_dis: 7, C.V.size:3104
+iter : 4240, current query_dis: 7, C.V.size:3094
+iter : 4250, current query_dis: 7, C.V.size:3084
+iter : 4260, current query_dis: 7, C.V.size:3074
+iter : 4270, current query_dis: 7, C.V.size:3064
+iter : 4280, current query_dis: 7, C.V.size:3054
+iter : 4290, current query_dis: 7, C.V.size:3044
+iter : 4300, current query_dis: 7, C.V.size:3034
+iter : 4310, current query_dis: 7, C.V.size:3024
+iter : 4320, current query_dis: 7, C.V.size:3014
+iter : 4330, current query_dis: 7, C.V.size:3004
+iter : 4340, current query_dis: 7, C.V.size:2994
+iter : 4350, current query_dis: 7, C.V.size:2984
+iter : 4360, current query_dis: 7, C.V.size:2974
+iter : 4370, current query_dis: 7, C.V.size:2964
+iter : 4380, current query_dis: 7, C.V.size:2954
+iter : 4390, current query_dis: 7, C.V.size:2944
+iter : 4400, current query_dis: 7, C.V.size:2934
+iter : 4410, current query_dis: 7, C.V.size:2924
+iter : 4420, current query_dis: 7, C.V.size:2914
+iter : 4430, current query_dis: 7, C.V.size:2904
+iter : 4440, current query_dis: 7, C.V.size:2894
+iter : 4450, current query_dis: 7, C.V.size:2884
+iter : 4460, current query_dis: 7, C.V.size:2874
+iter : 4470, current query_dis: 7, C.V.size:2864
+iter : 4480, current query_dis: 7, C.V.size:2854
+iter : 4490, current query_dis: 7, C.V.size:2844
+iter : 4500, current query_dis: 7, C.V.size:2834
+iter : 4510, current query_dis: 7, C.V.size:2824
+iter : 4520, current query_dis: 7, C.V.size:2814
+iter : 4530, current query_dis: 7, C.V.size:2804
+iter : 4540, current query_dis: 7, C.V.size:2794
+iter : 4550, current query_dis: 7, C.V.size:2784
+iter : 4560, current query_dis: 7, C.V.size:2774
+iter : 4570, current query_dis: 7, C.V.size:2764
+iter : 4580, current query_dis: 7, C.V.size:2754
+iter : 4590, current query_dis: 7, C.V.size:2744
+iter : 4600, current query_dis: 7, C.V.size:2734
+iter : 4610, current query_dis: 7, C.V.size:2724
+iter : 4620, current query_dis: 7, C.V.size:2714
+iter : 4630, current query_dis: 7, C.V.size:2704
+iter : 4640, current query_dis: 7, C.V.size:2694
+iter : 4650, current query_dis: 7, C.V.size:2684
+iter : 4660, current query_dis: 7, C.V.size:2674
+iter : 4670, current query_dis: 7, C.V.size:2664
+iter : 4680, current query_dis: 7, C.V.size:2654
+iter : 4690, current query_dis: 7, C.V.size:2644
+iter : 4700, current query_dis: 7, C.V.size:2634
+iter : 4710, current query_dis: 7, C.V.size:2624
+iter : 4720, current query_dis: 7, C.V.size:2614
+iter : 4730, current query_dis: 7, C.V.size:2604
+iter : 4740, current query_dis: 7, C.V.size:2594
+iter : 4750, current query_dis: 7, C.V.size:2584
+iter : 4760, current query_dis: 7, C.V.size:2574
+iter : 4770, current query_dis: 7, C.V.size:2564
+iter : 4780, current query_dis: 7, C.V.size:2554
+iter : 4790, current query_dis: 7, C.V.size:2544
+iter : 4800, current query_dis: 7, C.V.size:2534
+iter : 4810, current query_dis: 7, C.V.size:2524
+iter : 4820, current query_dis: 7, C.V.size:2514
+iter : 4830, current query_dis: 7, C.V.size:2504
+iter : 4840, current query_dis: 7, C.V.size:2494
+iter : 4850, current query_dis: 7, C.V.size:2484
+iter : 4860, current query_dis: 7, C.V.size:2474
+iter : 4870, current query_dis: 7, C.V.size:2464
+iter : 4880, current query_dis: 7, C.V.size:2454
+iter : 4890, current query_dis: 7, C.V.size:2444
+iter : 4900, current query_dis: 7, C.V.size:2434
+iter : 4910, current query_dis: 7, C.V.size:2424
+iter : 4920, current query_dis: 7, C.V.size:2414
+iter : 4930, current query_dis: 7, C.V.size:2404
+iter : 4940, current query_dis: 7, C.V.size:2394
+iter : 4950, current query_dis: 7, C.V.size:2384
+iter : 4960, current query_dis: 7, C.V.size:2374
+iter : 4970, current query_dis: 7, C.V.size:2364
+iter : 4980, current query_dis: 7, C.V.size:2354
+iter : 4990, current query_dis: 7, C.V.size:2344
+iter : 5000, current query_dis: 7, C.V.size:2334
+iter : 5010, current query_dis: 7, C.V.size:2324
+iter : 5020, current query_dis: 7, C.V.size:2314
+iter : 5030, current query_dis: 7, C.V.size:2304
+iter : 5040, current query_dis: 7, C.V.size:2294
+iter : 5050, current query_dis: 7, C.V.size:2284
+iter : 5060, current query_dis: 7, C.V.size:2274
+iter : 5070, current query_dis: 7, C.V.size:2264
+iter : 5080, current query_dis: 7, C.V.size:2254
+iter : 5090, current query_dis: 7, C.V.size:2244
+iter : 5100, current query_dis: 7, C.V.size:2234
+iter : 5110, current query_dis: 7, C.V.size:2224
+iter : 5120, current query_dis: 7, C.V.size:2214
+iter : 5130, current query_dis: 7, C.V.size:2204
+iter : 5140, current query_dis: 7, C.V.size:2194
+iter : 5150, current query_dis: 7, C.V.size:2184
+iter : 5160, current query_dis: 7, C.V.size:2174
+iter : 5170, current query_dis: 7, C.V.size:2164
+iter : 5180, current query_dis: 7, C.V.size:2154
+iter : 5190, current query_dis: 7, C.V.size:2144
+iter : 5200, current query_dis: 7, C.V.size:2134
+iter : 5210, current query_dis: 7, C.V.size:2124
+iter : 5220, current query_dis: 7, C.V.size:2114
+iter : 5230, current query_dis: 7, C.V.size:2104
+iter : 5240, current query_dis: 7, C.V.size:2094
+iter : 5250, current query_dis: 7, C.V.size:2084
+iter : 5260, current query_dis: 7, C.V.size:2074
+iter : 5270, current query_dis: 7, C.V.size:2064
+iter : 5280, current query_dis: 7, C.V.size:2054
+iter : 5290, current query_dis: 7, C.V.size:2044
+iter : 5300, current query_dis: 7, C.V.size:2034
+iter : 5310, current query_dis: 7, C.V.size:2024
+iter : 5320, current query_dis: 7, C.V.size:2014
+iter : 5330, current query_dis: 7, C.V.size:2004
+iter : 5340, current query_dis: 7, C.V.size:1994
+iter : 5350, current query_dis: 7, C.V.size:1984
+iter : 5360, current query_dis: 7, C.V.size:1974
+iter : 5370, current query_dis: 7, C.V.size:1964
+iter : 5380, current query_dis: 7, C.V.size:1954
+iter : 5390, current query_dis: 7, C.V.size:1944
+iter : 5400, current query_dis: 7, C.V.size:1934
+iter : 5410, current query_dis: 7, C.V.size:1924
+iter : 5420, current query_dis: 7, C.V.size:1914
+iter : 5430, current query_dis: 7, C.V.size:1904
+iter : 5440, current query_dis: 7, C.V.size:1894
+iter : 5450, current query_dis: 7, C.V.size:1884
+iter : 5460, current query_dis: 7, C.V.size:1874
+iter : 5470, current query_dis: 7, C.V.size:1864
+iter : 5480, current query_dis: 7, C.V.size:1854
+iter : 5490, current query_dis: 7, C.V.size:1844
+iter : 5500, current query_dis: 7, C.V.size:1834
+iter : 5510, current query_dis: 7, C.V.size:1824
+iter : 5520, current query_dis: 7, C.V.size:1814
+iter : 5530, current query_dis: 7, C.V.size:1804
+iter : 5540, current query_dis: 7, C.V.size:1794
+iter : 5550, current query_dis: 7, C.V.size:1784
+iter : 5560, current query_dis: 7, C.V.size:1774
+iter : 5570, current query_dis: 7, C.V.size:1764
+iter : 5580, current query_dis: 7, C.V.size:1754
+iter : 5590, current query_dis: 7, C.V.size:1744
+iter : 5600, current query_dis: 7, C.V.size:1734
+iter : 5610, current query_dis: 7, C.V.size:1724
+iter : 5620, current query_dis: 7, C.V.size:1714
+iter : 5630, current query_dis: 7, C.V.size:1704
+iter : 5640, current query_dis: 7, C.V.size:1694
+iter : 5650, current query_dis: 7, C.V.size:1684
+iter : 5660, current query_dis: 7, C.V.size:1674
+iter : 5670, current query_dis: 7, C.V.size:1664
+iter : 5680, current query_dis: 7, C.V.size:1654
+iter : 5690, current query_dis: 7, C.V.size:1644
+iter : 5700, current query_dis: 7, C.V.size:1634
+iter : 5710, current query_dis: 7, C.V.size:1624
+iter : 5720, current query_dis: 7, C.V.size:1614
+iter : 5730, current query_dis: 7, C.V.size:1604
+iter : 5740, current query_dis: 7, C.V.size:1594
+iter : 5750, current query_dis: 7, C.V.size:1584
+iter : 5760, current query_dis: 7, C.V.size:1574
+iter : 5770, current query_dis: 7, C.V.size:1564
+iter : 5780, current query_dis: 7, C.V.size:1554
+iter : 5790, current query_dis: 7, C.V.size:1544
+iter : 5800, current query_dis: 7, C.V.size:1534
+iter : 5810, current query_dis: 7, C.V.size:1524
+iter : 5820, current query_dis: 7, C.V.size:1514
+iter : 5830, current query_dis: 7, C.V.size:1504
+iter : 5840, current query_dis: 7, C.V.size:1494
+iter : 5850, current query_dis: 7, C.V.size:1484
+iter : 5860, current query_dis: 7, C.V.size:1474
+iter : 5870, current query_dis: 7, C.V.size:1464
+iter : 5880, current query_dis: 7, C.V.size:1454
+iter : 5890, current query_dis: 7, C.V.size:1444
+iter : 5900, current query_dis: 7, C.V.size:1434
+iter : 5910, current query_dis: 7, C.V.size:1424
+iter : 5920, current query_dis: 7, C.V.size:1414
+iter : 5930, current query_dis: 7, C.V.size:1404
+iter : 5940, current query_dis: 7, C.V.size:1394
+iter : 5950, current query_dis: 7, C.V.size:1384
+iter : 5960, current query_dis: 7, C.V.size:1374
+iter : 5970, current query_dis: 7, C.V.size:1364
+iter : 5980, current query_dis: 7, C.V.size:1354
+iter : 5990, current query_dis: 7, C.V.size:1344
+iter : 6000, current query_dis: 7, C.V.size:1334
+iter : 6010, current query_dis: 7, C.V.size:1324
+iter : 6020, current query_dis: 7, C.V.size:1314
+iter : 6030, current query_dis: 7, C.V.size:1304
+iter : 6040, current query_dis: 7, C.V.size:1294
+iter : 6050, current query_dis: 7, C.V.size:1284
+iter : 6060, current query_dis: 7, C.V.size:1274
+iter : 6070, current query_dis: 7, C.V.size:1264
+iter : 6080, current query_dis: 6, C.V.size:1254
+iter : 6090, current query_dis: 6, C.V.size:1244
+iter : 6100, current query_dis: 6, C.V.size:1234
+iter : 6110, current query_dis: 6, C.V.size:1224
+iter : 6120, current query_dis: 6, C.V.size:1214
+iter : 6130, current query_dis: 6, C.V.size:1204
+iter : 6140, current query_dis: 6, C.V.size:1194
+iter : 6150, current query_dis: 6, C.V.size:1184
+iter : 6160, current query_dis: 6, C.V.size:1174
+iter : 6170, current query_dis: 6, C.V.size:1164
+iter : 6180, current query_dis: 6, C.V.size:1154
+iter : 6190, current query_dis: 6, C.V.size:1144
+iter : 6200, current query_dis: 6, C.V.size:1134
+iter : 6210, current query_dis: 6, C.V.size:1124
+iter : 6220, current query_dis: 6, C.V.size:1114
+iter : 6230, current query_dis: 6, C.V.size:1104
+iter : 6240, current query_dis: 6, C.V.size:1094
+iter : 6250, current query_dis: 6, C.V.size:1084
+iter : 6260, current query_dis: 6, C.V.size:1074
+iter : 6270, current query_dis: 6, C.V.size:1064
+iter : 6280, current query_dis: 6, C.V.size:1054
+iter : 6290, current query_dis: 6, C.V.size:1044
+iter : 6300, current query_dis: 6, C.V.size:1034
+iter : 6310, current query_dis: 6, C.V.size:1024
+iter : 6320, current query_dis: 6, C.V.size:1014
+iter : 6330, current query_dis: 6, C.V.size:1004
+iter : 6340, current query_dis: 6, C.V.size:994
+iter : 6350, current query_dis: 6, C.V.size:984
+iter : 6360, current query_dis: 6, C.V.size:974
+iter : 6370, current query_dis: 6, C.V.size:964
+iter : 6380, current query_dis: 6, C.V.size:954
+iter : 6390, current query_dis: 6, C.V.size:944
+iter : 6400, current query_dis: 6, C.V.size:934
+iter : 6410, current query_dis: 6, C.V.size:924
+iter : 6420, current query_dis: 6, C.V.size:914
+iter : 6430, current query_dis: 6, C.V.size:904
+iter : 6440, current query_dis: 6, C.V.size:894
+iter : 6450, current query_dis: 6, C.V.size:884
+iter : 6460, current query_dis: 6, C.V.size:874
+iter : 6470, current query_dis: 6, C.V.size:864
+iter : 6480, current query_dis: 6, C.V.size:854
+iter : 6490, current query_dis: 6, C.V.size:844
+iter : 6500, current query_dis: 6, C.V.size:834
+iter : 6510, current query_dis: 6, C.V.size:824
+iter : 6520, current query_dis: 6, C.V.size:814
+iter : 6530, current query_dis: 6, C.V.size:804
+iter : 6540, current query_dis: 6, C.V.size:794
+iter : 6550, current query_dis: 6, C.V.size:784
+iter : 6560, current query_dis: 6, C.V.size:774
+iter : 6570, current query_dis: 6, C.V.size:764
+iter : 6580, current query_dis: 6, C.V.size:754
+iter : 6590, current query_dis: 6, C.V.size:744
+iter : 6600, current query_dis: 6, C.V.size:734
+iter : 6610, current query_dis: 6, C.V.size:724
+iter : 6620, current query_dis: 6, C.V.size:714
+iter : 6630, current query_dis: 6, C.V.size:704
+iter : 6640, current query_dis: 6, C.V.size:694
+iter : 6650, current query_dis: 6, C.V.size:684
+iter : 6660, current query_dis: 6, C.V.size:674
+iter : 6670, current query_dis: 6, C.V.size:664
+iter : 6680, current query_dis: 6, C.V.size:654
+iter : 6690, current query_dis: 6, C.V.size:644
+iter : 6700, current query_dis: 6, C.V.size:634
+iter : 6710, current query_dis: 6, C.V.size:624
+iter : 6720, current query_dis: 6, C.V.size:614
+iter : 6730, current query_dis: 6, C.V.size:604
+iter : 6740, current query_dis: 6, C.V.size:594
+iter : 6750, current query_dis: 6, C.V.size:584
+iter : 6760, current query_dis: 6, C.V.size:574
+iter : 6770, current query_dis: 6, C.V.size:564
+iter : 6780, current query_dis: 6, C.V.size:554
+iter : 6790, current query_dis: 6, C.V.size:544
+iter : 6800, current query_dis: 6, C.V.size:534
+iter : 6810, current query_dis: 6, C.V.size:524
+iter : 6820, current query_dis: 6, C.V.size:514
+iter : 6830, current query_dis: 6, C.V.size:504
+iter : 6840, current query_dis: 6, C.V.size:494
+iter : 6850, current query_dis: 6, C.V.size:484
+iter : 6860, current query_dis: 6, C.V.size:474
+iter : 6870, current query_dis: 6, C.V.size:464
+iter : 6880, current query_dis: 6, C.V.size:454
+iter : 6890, current query_dis: 6, C.V.size:444
+iter : 6900, current query_dis: 6, C.V.size:434
+iter : 6910, current query_dis: 5, C.V.size:424
+iter : 6920, current query_dis: 5, C.V.size:414
+iter : 6930, current query_dis: 5, C.V.size:404
+iter : 6940, current query_dis: 5, C.V.size:394
+iter : 6950, current query_dis: 5, C.V.size:384
+iter : 6960, current query_dis: 5, C.V.size:374
+iter : 6970, current query_dis: 5, C.V.size:364
+iter : 6980, current query_dis: 5, C.V.size:354
+iter : 6990, current query_dis: 5, C.V.size:344
+iter : 7000, current query_dis: 5, C.V.size:334
+iter : 7010, current query_dis: 5, C.V.size:324
+iter : 7020, current query_dis: 5, C.V.size:314
+iter : 7030, current query_dis: 5, C.V.size:304
+iter : 7040, current query_dis: 5, C.V.size:294
+iter : 7050, current query_dis: 5, C.V.size:284
+iter : 7060, current query_dis: 5, C.V.size:274
+iter : 7070, current query_dis: 5, C.V.size:264
+iter : 7080, current query_dis: 5, C.V.size:254
+iter : 7090, current query_dis: 5, C.V.size:244
+iter : 7100, current query_dis: 5, C.V.size:234
+iter : 7110, current query_dis: 5, C.V.size:224
+iter : 7120, current query_dis: 5, C.V.size:214
+iter : 7130, current query_dis: 5, C.V.size:204
+iter : 7140, current query_dis: 5, C.V.size:194
+iter : 7150, current query_dis: 5, C.V.size:184
+iter : 7160, current query_dis: 5, C.V.size:174
+iter : 7170, current query_dis: 5, C.V.size:164
+iter : 7180, current query_dis: 5, C.V.size:154
+iter : 7190, current query_dis: 5, C.V.size:144
+iter : 7200, current query_dis: 4, C.V.size:134
+iter : 7210, current query_dis: 4, C.V.size:124
+iter : 7220, current query_dis: 4, C.V.size:114
+Distance time: 10.8517s.
+Maintain time: 0.0216s.
+Delete running time: 39.0448s.
+Loading ../Dataset/dblp_A4/dblp_A4.txt
+Reading edge 19.0501%.
+Reading edge 38.1001%.
+Reading edge 57.1502%.
+Reading edge 76.2002%.
+Reading edge 95.2503%.
+Reading finished.
+Truss decomposition running...
+Computing support 15.7689%.
+Computing support 31.5378%.
+Computing support 47.3067%.
+Computing support 63.0756%.
+Computing support 78.8445%.
+Computing support 94.6133%.
+Support computed!
+Computing trussness!
+Current trussness : 3.
+Current trussness : 4.
+Current trussness : 5.
+Current trussness : 6.
+Current trussness : 7.
+Current trussness : 8.
+Current trussness : 9.
+Current trussness : 10.
+Current trussness : 11.
+Current trussness : 12.
+Current trussness : 13.
+Current trussness : 14.
+Current trussness : 15.
+Current trussness : 16.
+Current trussness : 17.
+Current trussness : 18.
+Current trussness : 19.
+Current trussness : 20.
+Current trussness : 21.
+Current trussness : 22.
+Current trussness : 23.
+Current trussness : 24.
+Current trussness : 25.
+Current trussness : 26.
+Current trussness : 27.
+Current trussness : 28.
+Current trussness : 29.
+Current trussness : 30.
+Current trussness : 31.
+Current trussness : 32.
+Current trussness : 33.
+Current trussness : 34.
+Current trussness : 35.
+Current trussness : 36.
+Current trussness : 37.
+Current trussness : 39.
+Current trussness : 40.
+Current trussness : 43.
+Current trussness : 44.
+Current trussness : 48.
+Current trussness : 49.
+Current trussness : 52.
+Current trussness : 63.
+Current trussness : 65.
+Current trussness : 102.
+Current trussness : 114.
+Truss decomposition finished.
+FTCS running...
+lk : 2 , rk : 19, fairness:80
+lk : 11 , rk : 19, fairness:80
+lk : 16 , rk : 19, fairness:80
+lk : 18 , rk : 19, fairness:80
+C.V size: 562
+Binary search running time: 0.0794s.
+iter : 10, current query_dis: 7, C.V.size:553
+iter : 20, current query_dis: 7, C.V.size:543
+iter : 30, current query_dis: 6, C.V.size:533
+iter : 40, current query_dis: 6, C.V.size:523
+iter : 50, current query_dis: 6, C.V.size:513
+iter : 60, current query_dis: 5, C.V.size:503
+iter : 70, current query_dis: 5, C.V.size:493
+iter : 80, current query_dis: 5, C.V.size:483
+iter : 90, current query_dis: 5, C.V.size:473
+iter : 100, current query_dis: 5, C.V.size:463
+iter : 110, current query_dis: 5, C.V.size:453
+iter : 120, current query_dis: 5, C.V.size:443
+iter : 130, current query_dis: 5, C.V.size:433
+iter : 140, current query_dis: 4, C.V.size:423
+iter : 150, current query_dis: 4, C.V.size:413
+iter : 160, current query_dis: 4, C.V.size:403
+iter : 170, current query_dis: 4, C.V.size:393
+iter : 180, current query_dis: 4, C.V.size:383
+iter : 190, current query_dis: 4, C.V.size:373
+iter : 200, current query_dis: 4, C.V.size:363
+iter : 210, current query_dis: 4, C.V.size:353
+iter : 220, current query_dis: 4, C.V.size:343
+iter : 230, current query_dis: 4, C.V.size:333
+iter : 240, current query_dis: 4, C.V.size:323
+iter : 250, current query_dis: 4, C.V.size:313
+iter : 260, current query_dis: 4, C.V.size:303
+iter : 270, current query_dis: 4, C.V.size:293
+iter : 280, current query_dis: 4, C.V.size:283
+iter : 290, current query_dis: 4, C.V.size:273
+iter : 300, current query_dis: 4, C.V.size:263
+iter : 310, current query_dis: 4, C.V.size:253
+iter : 320, current query_dis: 4, C.V.size:243
+iter : 330, current query_dis: 3, C.V.size:233
+iter : 340, current query_dis: 3, C.V.size:223
+iter : 350, current query_dis: 3, C.V.size:213
+iter : 360, current query_dis: 3, C.V.size:203
+iter : 370, current query_dis: 3, C.V.size:193
+iter : 380, current query_dis: 3, C.V.size:183
+iter : 390, current query_dis: 3, C.V.size:173
+iter : 400, current query_dis: 3, C.V.size:163
+iter : 410, current query_dis: 3, C.V.size:153
+iter : 420, current query_dis: 3, C.V.size:143
+iter : 430, current query_dis: 3, C.V.size:133
+iter : 440, current query_dis: 3, C.V.size:123
+Distance time: 0.2918s.
+Maintain time: 0.0017s.
+Delete running time: 0.8726s.
+Loading ../Dataset/LiveJournal_A4/LiveJournal_A4.txt
+Reading edge 0.5767%.
+Reading edge 1.1534%.
+Reading edge 1.7300%.
+Reading edge 2.3067%.
+Reading edge 2.8834%.
+Reading edge 3.4601%.
+Reading edge 4.0368%.
+Reading edge 4.6135%.
+Reading edge 5.1901%.
+Reading edge 5.7668%.
+Reading edge 6.3435%.
+Reading edge 6.9202%.
+Reading edge 7.4969%.
+Reading edge 8.0735%.
+Reading edge 8.6502%.
+Reading edge 9.2269%.
+Reading edge 9.8036%.
+Reading edge 10.3803%.
+Reading edge 10.9569%.
+Reading edge 11.5336%.
+Reading edge 12.1103%.
+Reading edge 12.6870%.
+Reading edge 13.2637%.
+Reading edge 13.8404%.
+Reading edge 14.4170%.
+Reading edge 14.9937%.
+Reading edge 15.5704%.
+Reading edge 16.1471%.
+Reading edge 16.7238%.
+Reading edge 17.3004%.
+Reading edge 17.8771%.
+Reading edge 18.4538%.
+Reading edge 19.0305%.
+Reading edge 19.6072%.
+Reading edge 20.1839%.
+Reading edge 20.7605%.
+Reading edge 21.3372%.
+Reading edge 21.9139%.
+Reading edge 22.4906%.
+Reading edge 23.0673%.
+Reading edge 23.6439%.
+Reading edge 24.2206%.
+Reading edge 24.7973%.
+Reading edge 25.3740%.
+Reading edge 25.9507%.
+Reading edge 26.5273%.
+Reading edge 27.1040%.
+Reading edge 27.6807%.
+Reading edge 28.2574%.
+Reading edge 28.8341%.
+Reading edge 29.4108%.
+Reading edge 29.9874%.
+Reading edge 30.5641%.
+Reading edge 31.1408%.
+Reading edge 31.7175%.
+Reading edge 32.2942%.
+Reading edge 32.8708%.
+Reading edge 33.4475%.
+Reading edge 34.0242%.
+Reading edge 34.6009%.
+Reading edge 35.1776%.
+Reading edge 35.7543%.
+Reading edge 36.3309%.
+Reading edge 36.9076%.
+Reading edge 37.4843%.
+Reading edge 38.0610%.
+Reading edge 38.6377%.
+Reading edge 39.2143%.
+Reading edge 39.7910%.
+Reading edge 40.3677%.
+Reading edge 40.9444%.
+Reading edge 41.5211%.
+Reading edge 42.0977%.
+Reading edge 42.6744%.
+Reading edge 43.2511%.
+Reading edge 43.8278%.
+Reading edge 44.4045%.
+Reading edge 44.9812%.
+Reading edge 45.5578%.
+Reading edge 46.1345%.
+Reading edge 46.7112%.
+Reading edge 47.2879%.
+Reading edge 47.8646%.
+Reading edge 48.4412%.
+Reading edge 49.0179%.
+Reading edge 49.5946%.
+Reading edge 50.1713%.
+Reading edge 50.7480%.
+Reading edge 51.3247%.
+Reading edge 51.9013%.
+Reading edge 52.4780%.
+Reading edge 53.0547%.
+Reading edge 53.6314%.
+Reading edge 54.2081%.
+Reading edge 54.7847%.
+Reading edge 55.3614%.
+Reading edge 55.9381%.
+Reading edge 56.5148%.
+Reading edge 57.0915%.
+Reading edge 57.6681%.
+Reading edge 58.2448%.
+Reading edge 58.8215%.
+Reading edge 59.3982%.
+Reading edge 59.9749%.
+Reading edge 60.5516%.
+Reading edge 61.1282%.
+Reading edge 61.7049%.
+Reading edge 62.2816%.
+Reading edge 62.8583%.
+Reading edge 63.4350%.
+Reading edge 64.0116%.
+Reading edge 64.5883%.
+Reading edge 65.1650%.
+Reading edge 65.7417%.
+Reading edge 66.3184%.
+Reading edge 66.8951%.
+Reading edge 67.4717%.
+Reading edge 68.0484%.
+Reading edge 68.6251%.
+Reading edge 69.2018%.
+Reading edge 69.7785%.
+Reading edge 70.3551%.
+Reading edge 70.9318%.
+Reading edge 71.5085%.
+Reading edge 72.0852%.
+Reading edge 72.6619%.
+Reading edge 73.2386%.
+Reading edge 73.8152%.
+Reading edge 74.3919%.
+Reading edge 74.9686%.
+Reading edge 75.5453%.
+Reading edge 76.1220%.
+Reading edge 76.6986%.
+Reading edge 77.2753%.
+Reading edge 77.8520%.
+Reading edge 78.4287%.
+Reading edge 79.0054%.
+Reading edge 79.5820%.
+Reading edge 80.1587%.
+Reading edge 80.7354%.
+Reading edge 81.3121%.
+Reading edge 81.8888%.
+Reading edge 82.4655%.
+Reading edge 83.0421%.
+Reading edge 83.6188%.
+Reading edge 84.1955%.
+Reading edge 84.7722%.
+Reading edge 85.3489%.
+Reading edge 85.9255%.
+Reading edge 86.5022%.
+Reading edge 87.0789%.
+Reading edge 87.6556%.
+Reading edge 88.2323%.
+Reading edge 88.8090%.
+Reading edge 89.3856%.
+Reading edge 89.9623%.
+Reading edge 90.5390%.
+Reading edge 91.1157%.
+Reading edge 91.6924%.
+Reading edge 92.2690%.
+Reading edge 92.8457%.
+Reading edge 93.4224%.
+Reading edge 93.9991%.
+Reading edge 94.5758%.
+Reading edge 95.1524%.
+Reading edge 95.7291%.
+Reading edge 96.3058%.
+Reading edge 96.8825%.
+Reading edge 97.4592%.
+Reading edge 98.0359%.
+Reading edge 98.6125%.
+Reading edge 99.1892%.
+Reading edge 99.7659%.
+Reading finished.
+Truss decomposition running...
+Computing support 1.2506%.
+Computing support 2.5013%.
+Computing support 3.7519%.
