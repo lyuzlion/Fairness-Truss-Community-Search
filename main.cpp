@@ -173,6 +173,7 @@ Graph FTCS() {
                 }
             }
             ret.query_dis = C.query_dis;
+            cerr << "iter : " << tot << ", current query_dis: " << ret.query_dis << ", C.V.size:" << C.V.size() << '\n';
         }
 
         memset(in_que, false, sizeof(in_que));
@@ -303,11 +304,11 @@ int main(int argc, char * argv[])
     {
         cin >> E[i].u >> E[i].v;
         if(i % 200000 == 0) cerr << "Reading edge " << fixed << setprecision(4) << 100.0 * i / m << "%.\n";
+        assert(E[i].u != E[i].v);
         hash_table_1[1ll * E[i].u * n + E[i].v] = i;
         hash_table_1[1ll * E[i].v * n + E[i].u] = i;
         hash_table_2[1ll * E[i].u * n + E[i].v] = i;
         hash_table_2[1ll * E[i].v * n + E[i].u] = i;
-        assert(E[i].u != E[i].v);
         D[E[i].u]++;
         D[E[i].v]++;
         G[E[i].u].push_back(i);

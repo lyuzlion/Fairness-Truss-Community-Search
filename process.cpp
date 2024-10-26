@@ -30,10 +30,13 @@ void core_decomposition() {
     }
     int cur_core = G[node[0]].size();
     while(1) {
+        cerr << 1 << endl;
         while(!que.empty()) {
             int u = que.front();
+            cerr << u << endl;
             que.pop();
             for(const int v : G[u]) {
+                // cerr << v << "..."<< endl;
                 core_class[G[v].size()].erase(v);
                 G[v].erase(u);
                 core_class[G[v].size()].insert(v);
@@ -45,6 +48,7 @@ void core_decomposition() {
             }
             G[u].clear();
         }
+        cerr << 1 << endl;
         for(cur_core++;cur_core <= n;cur_core++) {
             if(cur_core <= 100) cerr << cur_core << " " << core_class[cur_core].size() << '\n';
             if(!core_class[cur_core].empty()) {
@@ -65,9 +69,9 @@ void core_decomposition() {
                 max_core = max(max_core, core[i]);
             }
             for(int i = 1;i <= n;i++) {
-                if(max_core * 0.15 - 1 <= core[i] && max_core * 0.15 + 1 >= core[i]) {
-                    // cout << i << " " << core[i] << '\n';
-                    cout << i << '\n';
+                if(max_core * 0.8 <= core[i] && max_core * 0.8 + 1 > core[i]) {
+                    cout << i << " " << core[i] << '\n';
+                    // cout << i << '\n';
                 }
             }
             return;
@@ -78,16 +82,19 @@ void core_decomposition() {
 
 
 int main() {
-    freopen("../Dataset/LiveJournal_A4/LiveJournal_A4.txt", "r", stdin);
-    freopen("../Dataset/LiveJournal_A4/LiveJournal_A4_processed.txt", "w", stdout);
+    freopen("../Dataset/amazon_A4/amazon_A4.txt", "r", stdin);
+    freopen("../Dataset/amazon_A4/amazon_A4_processed.txt", "w", stdout);
     cin >> n >> m;
+    // cout << n << " " <<  m << endl;
     for(int i = 1;i <= m;i++) {
         int u, v;
         cin >> u >> v;
+        if(u == v || G[u].count(v)) continue;
+        // cout << u << " " << v << endl;
         G[u].insert(v);
-        G[v].insert(u);    
+        G[v].insert(u);
     }
-
+    // return 0;
     core_decomposition();
 
     
