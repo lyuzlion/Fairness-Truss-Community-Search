@@ -5,7 +5,7 @@ using namespace std;
 
 const int max_trussness = 100005;
 const int maxn = 4050005;
-const int maxm = 35000005;
+const int maxm = 120000000;
 const int maxa = 10;
 int _gamma = 1;
 
@@ -64,8 +64,8 @@ struct HashTable
     HashTable()
     {
         cnt = 0;
-        e.resize(maxm << 3);
-        h.resize(maxm << 3, 0);
+        e.resize(maxm << 2);
+        h.resize(maxm << 2, 0);
     }
 };
 

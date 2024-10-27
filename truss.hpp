@@ -11,9 +11,9 @@ struct edge
     int sup;
     int trussness;
     edge() : u(0), v(0), sup(0), trussness(0) {}
-} E[maxm];
+};
 
-
+vector<edge> E(maxm);
 unordered_set<int> trussness_class[max_trussness];
 int vertices_in_degree_decending_order[maxn];
 
