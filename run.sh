@@ -2,7 +2,7 @@ g++ main.cpp -o main
 
 
 
-
+# vary theta
 
 ./main eucore_A4 6 800 6 1
 ./main eucore_A4 6 801 6 1
@@ -48,21 +48,7 @@ g++ main.cpp -o main
 
 
 
-
-./main eucore_A4 10 800 6 10
-./main eucore_A4 10 801 6 10
-./main eucore_A4 10 808 6 10
-./main eucore_A4 10 842 6 10
-
-./main eucore_A4 10 800 6 10
-./main eucore_A4 10 801 6 10
-./main eucore_A4 10 808 6 10
-./main eucore_A4 10 842 6 10
-
-./main eucore_A4 10 800 6 10
-./main eucore_A4 10 801 6 10
-./main eucore_A4 10 808 6 10
-./main eucore_A4 10 842 6 10
+# vary gamma
 
 ./main eucore_A4 10 800 6 10
 ./main eucore_A4 10 801 6 10
@@ -75,157 +61,30 @@ g++ main.cpp -o main
 ./main amazon_A4 10 124 6 10
 ./main amazon_A4 10 135 6 10
 
-./main amazon_A4 10 509 6 10
-./main amazon_A4 10 154 6 10
-./main amazon_A4 10 124 6 10
-./main amazon_A4 10 135 6 10
-
-./main amazon_A4 10 509 6 10
-./main amazon_A4 10 154 6 10
-./main amazon_A4 10 124 6 10
-./main amazon_A4 10 135 6 10
-
-./main amazon_A4 10 509 6 10
-./main amazon_A4 10 154 6 10
-./main amazon_A4 10 124 6 10
-./main amazon_A4 10 135 6 10
-
-
-
-
-
-
-
 ./main eucore_A4 10 800 6 20
 ./main eucore_A4 10 801 6 20
 ./main eucore_A4 10 808 6 20
 ./main eucore_A4 10 842 6 20
-
-./main eucore_A4 10 800 6 20
-./main eucore_A4 10 801 6 20
-./main eucore_A4 10 808 6 20
-./main eucore_A4 10 842 6 20
-
-./main eucore_A4 10 800 6 20
-./main eucore_A4 10 801 6 20
-./main eucore_A4 10 808 6 20
-./main eucore_A4 10 842 6 20
-
-./main eucore_A4 10 800 6 20
-./main eucore_A4 10 801 6 20
-./main eucore_A4 10 808 6 20
-./main eucore_A4 10 842 6 20
-
 
 ./main amazon_A4 10 509 6 20
 ./main amazon_A4 10 154 6 20
 ./main amazon_A4 10 124 6 20
 ./main amazon_A4 10 135 6 20
 
-./main amazon_A4 10 509 6 20
-./main amazon_A4 10 154 6 20
-./main amazon_A4 10 124 6 20
-./main amazon_A4 10 135 6 20
-
-./main amazon_A4 10 509 6 20
-./main amazon_A4 10 154 6 20
-./main amazon_A4 10 124 6 20
-./main amazon_A4 10 135 6 20
-
-./main amazon_A4 10 509 6 20
-./main amazon_A4 10 154 6 20
-./main amazon_A4 10 124 6 20
-./main amazon_A4 10 135 6 20
-
-
-
-
-
-
-
 ./main eucore_A4 10 800 6 30
 ./main eucore_A4 10 801 6 30
 ./main eucore_A4 10 808 6 30
 ./main eucore_A4 10 842 6 30
-
-./main eucore_A4 10 800 6 30
-./main eucore_A4 10 801 6 30
-./main eucore_A4 10 808 6 30
-./main eucore_A4 10 842 6 30
-
-./main eucore_A4 10 800 6 30
-./main eucore_A4 10 801 6 30
-./main eucore_A4 10 808 6 30
-./main eucore_A4 10 842 6 30
-
-./main eucore_A4 10 800 6 30
-./main eucore_A4 10 801 6 30
-./main eucore_A4 10 808 6 30
-./main eucore_A4 10 842 6 30
-
 
 ./main amazon_A4 10 509 6 30
 ./main amazon_A4 10 154 6 30
 ./main amazon_A4 10 124 6 30
 ./main amazon_A4 10 135 6 30
 
-./main amazon_A4 10 509 6 30
-./main amazon_A4 10 154 6 30
-./main amazon_A4 10 124 6 30
-./main amazon_A4 10 135 6 30
-
-./main amazon_A4 10 509 6 30
-./main amazon_A4 10 154 6 30
-./main amazon_A4 10 124 6 30
-./main amazon_A4 10 135 6 30
-
-./main amazon_A4 10 509 6 30
-./main amazon_A4 10 154 6 30
-./main amazon_A4 10 124 6 30
-./main amazon_A4 10 135 6 30
-
-
-
-
-
-
-
-
 ./main eucore_A4 10 800 6 40
 ./main eucore_A4 10 801 6 40
 ./main eucore_A4 10 808 6 40
 ./main eucore_A4 10 842 6 40
-
-./main eucore_A4 10 800 6 40
-./main eucore_A4 10 801 6 40
-./main eucore_A4 10 808 6 40
-./main eucore_A4 10 842 6 40
-
-./main eucore_A4 10 800 6 40
-./main eucore_A4 10 801 6 40
-./main eucore_A4 10 808 6 40
-./main eucore_A4 10 842 6 40
-
-./main eucore_A4 10 800 6 40
-./main eucore_A4 10 801 6 40
-./main eucore_A4 10 808 6 40
-./main eucore_A4 10 842 6 40
-
-
-./main amazon_A4 10 509 6 40
-./main amazon_A4 10 154 6 40
-./main amazon_A4 10 124 6 40
-./main amazon_A4 10 135 6 40
-
-./main amazon_A4 10 509 6 40
-./main amazon_A4 10 154 6 40
-./main amazon_A4 10 124 6 40
-./main amazon_A4 10 135 6 40
-
-./main amazon_A4 10 509 6 40
-./main amazon_A4 10 154 6 40
-./main amazon_A4 10 124 6 40
-./main amazon_A4 10 135 6 40
 
 ./main amazon_A4 10 509 6 40
 ./main amazon_A4 10 154 6 40
@@ -237,91 +96,22 @@ g++ main.cpp -o main
 
 
 
-./main facebook_A4 10 239 6 30
-./main facebook_A4 10 249 6 30
-./main facebook_A4 10 325 6 30
-./main facebook_A4 10 335 6 30
 
-./main facebook_A4 10 239 6 30
-./main facebook_A4 10 249 6 30
-./main facebook_A4 10 325 6 30
-./main facebook_A4 10 335 6 30
 
 ./main facebook_A4 10 239 6 30
 ./main facebook_A4 10 249 6 30
 ./main facebook_A4 10 325 6 30
 ./main facebook_A4 10 335 6 30
 
-./main facebook_A4 10 239 6 30
-./main facebook_A4 10 249 6 30
-./main facebook_A4 10 325 6 30
-./main facebook_A4 10 335 6 30
-
-
 ./main dblp_A4 10 385 6 30
 ./main dblp_A4 10 697 6 30
 ./main dblp_A4 10 801 6 30
 ./main dblp_A4 10 982 6 30
 
-./main dblp_A4 10 385 6 30
-./main dblp_A4 10 697 6 30
-./main dblp_A4 10 801 6 30
-./main dblp_A4 10 982 6 30
-
-./main dblp_A4 10 385 6 30
-./main dblp_A4 10 697 6 30
-./main dblp_A4 10 801 6 30
-./main dblp_A4 10 982 6 30
-
-./main dblp_A4 10 385 6 30
-./main dblp_A4 10 697 6 30
-./main dblp_A4 10 801 6 30
-./main dblp_A4 10 982 6 30
-
-
 ./main LiveJournal_A4 10 206 6 30
 ./main LiveJournal_A4 10 243 6 30
 ./main LiveJournal_A4 10 285 6 30
 ./main LiveJournal_A4 10 353 6 30
-
-./main LiveJournal_A4 10 206 6 30
-./main LiveJournal_A4 10 243 6 30
-./main LiveJournal_A4 10 285 6 30
-./main LiveJournal_A4 10 353 6 30
-
-./main LiveJournal_A4 10 206 6 30
-./main LiveJournal_A4 10 243 6 30
-./main LiveJournal_A4 10 285 6 30
-./main LiveJournal_A4 10 353 6 30
-
-./main LiveJournal_A4 10 206 6 30
-./main LiveJournal_A4 10 243 6 30
-./main LiveJournal_A4 10 285 6 30
-./main LiveJournal_A4 10 353 6 30
-
-
-
-
-
-
-
-
-
-
-./main facebook_A4 10 239 6 40
-./main facebook_A4 10 249 6 40
-./main facebook_A4 10 325 6 40
-./main facebook_A4 10 335 6 40
-
-./main facebook_A4 10 239 6 40
-./main facebook_A4 10 249 6 40
-./main facebook_A4 10 325 6 40
-./main facebook_A4 10 335 6 40
-
-./main facebook_A4 10 239 6 40
-./main facebook_A4 10 249 6 40
-./main facebook_A4 10 325 6 40
-./main facebook_A4 10 335 6 40
 
 ./main facebook_A4 10 239 6 40
 ./main facebook_A4 10 249 6 40
@@ -334,36 +124,6 @@ g++ main.cpp -o main
 ./main dblp_A4 10 801 6 40
 ./main dblp_A4 10 982 6 40
 
-./main dblp_A4 10 385 6 40
-./main dblp_A4 10 697 6 40
-./main dblp_A4 10 801 6 40
-./main dblp_A4 10 982 6 40
-
-./main dblp_A4 10 385 6 40
-./main dblp_A4 10 697 6 40
-./main dblp_A4 10 801 6 40
-./main dblp_A4 10 982 6 40
-
-./main dblp_A4 10 385 6 40
-./main dblp_A4 10 697 6 40
-./main dblp_A4 10 801 6 40
-./main dblp_A4 10 982 6 40
-
-
-./main LiveJournal_A4 10 206 6 40
-./main LiveJournal_A4 10 243 6 40
-./main LiveJournal_A4 10 285 6 40
-./main LiveJournal_A4 10 353 6 40
-
-./main LiveJournal_A4 10 206 6 40
-./main LiveJournal_A4 10 243 6 40
-./main LiveJournal_A4 10 285 6 40
-./main LiveJournal_A4 10 353 6 40
-
-./main LiveJournal_A4 10 206 6 40
-./main LiveJournal_A4 10 243 6 40
-./main LiveJournal_A4 10 285 6 40
-./main LiveJournal_A4 10 353 6 40
 
 ./main LiveJournal_A4 10 206 6 40
 ./main LiveJournal_A4 10 243 6 40
@@ -379,6 +139,69 @@ g++ main.cpp -o main
 
 
 
+
+# vary theta
+
+./main wiki_A4 6 1259 6 1
+./main wiki_A4 6 1272 6 1
+
+./main wiki_A4 8 1259 6 1
+./main wiki_A4 8 1272 6 1
+
+./main wiki_A4 12 1259 6 1
+./main wiki_A4 12 1272 6 1
+
+./main wiki_A4 14 1259 6 1
+./main wiki_A4 14 1272 6 1
+
+
+# vary attribute size
+./main wiki_A4 10 1259 2 1
+./main wiki_A4 10 1272 2 1
+
+./main wiki_A4 10 1259 4 1
+./main wiki_A4 10 1272 4 1
+
+./main wiki_A4 10 1259 6 1
+./main wiki_A4 10 1272 6 1
+
+./main wiki_A4 10 1259 8 1
+./main wiki_A4 10 1272 8 1
+
+./main wiki_A4 10 1259 10 1
+./main wiki_A4 10 1272 10 1
+
+
+# vary gamma
+./main wiki_A4 10 276 6 10
+./main wiki_A4 10 349 6 10
+
+./main wiki_A4 10 276 6 20
+./main wiki_A4 10 349 6 20
+
+./main wiki_A4 10 276 6 30
+./main wiki_A4 10 349 6 30
+
+./main wiki_A4 10 276 6 40
+./main wiki_A4 10 349 6 40
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# vary theta
 ./main Orkut_A4 6 276 4 1
 ./main Orkut_A4 6 349 4 1
 
@@ -392,7 +215,7 @@ g++ main.cpp -o main
 ./main Orkut_A4 14 349 10 1
 
 
-
+# vary attribute size
 ./main Orkut_A4 10 276 2 1
 ./main Orkut_A4 10 349 2 1
 
@@ -409,58 +232,15 @@ g++ main.cpp -o main
 ./main Orkut_A4 10 349 10 1
 
 
-
+# vary gamma
 ./main Orkut_A4 10 276 6 10
 ./main Orkut_A4 10 349 6 10
-
-./main Orkut_A4 10 276 6 10
-./main Orkut_A4 10 349 6 10
-
-./main Orkut_A4 10 276 6 10
-./main Orkut_A4 10 349 6 10
-
-./main Orkut_A4 10 276 6 10
-./main Orkut_A4 10 349 6 10
-
-
-
 
 ./main Orkut_A4 10 276 6 20
 ./main Orkut_A4 10 349 6 20
 
-./main Orkut_A4 10 276 6 20
-./main Orkut_A4 10 349 6 20
-
-./main Orkut_A4 10 276 6 20
-./main Orkut_A4 10 349 6 20
-
-./main Orkut_A4 10 276 6 20
-./main Orkut_A4 10 349 6 20
-
-
-
 ./main Orkut_A4 10 276 6 30
 ./main Orkut_A4 10 349 6 30
-
-./main Orkut_A4 10 276 6 30
-./main Orkut_A4 10 349 6 30
-
-./main Orkut_A4 10 276 6 30
-./main Orkut_A4 10 349 6 30
-
-./main Orkut_A4 10 276 6 30
-./main Orkut_A4 10 349 6 30
-
-
-
-./main Orkut_A4 10 276 6 40
-./main Orkut_A4 10 349 6 40
-
-./main Orkut_A4 10 276 6 40
-./main Orkut_A4 10 349 6 40
-
-./main Orkut_A4 10 276 6 40
-./main Orkut_A4 10 349 6 40
 
 ./main Orkut_A4 10 276 6 40
 ./main Orkut_A4 10 349 6 40
