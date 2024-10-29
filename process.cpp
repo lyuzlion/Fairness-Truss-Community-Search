@@ -77,8 +77,9 @@ void core_decomposition() {
             int cnt10 = 0;
             int cnt11 = 0;
             int cnt50 = 0;
+            cout << "max coreness : " << max_core << endl;
             for(int i = 1;i <= n;i++) {
-                if(core[i] == max_core * 0.5) {
+                if(core[i] <= max_core * 0.85 + 2 && core[i] >= max_core * 0.85) {
                     cout << i << endl;
                 }
             }   

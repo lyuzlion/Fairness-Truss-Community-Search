@@ -1,189 +1,50 @@
 g++ main.cpp -o main
-
-
-
-# vary theta
-
-./main eucore_A4 6 800 6 1
-./main eucore_A4 6 801 6 1
-./main eucore_A4 6 808 6 1
-./main eucore_A4 6 842 6 1
-
-./main eucore_A4 8 800 6 1
-./main eucore_A4 8 801 6 1
-./main eucore_A4 8 808 6 1
-./main eucore_A4 8 842 6 1
-
-./main eucore_A4 12 800 6 1
-./main eucore_A4 12 801 6 1
-./main eucore_A4 12 808 6 1
-./main eucore_A4 12 842 6 1
-
-./main eucore_A4 14 800 6 1
-./main eucore_A4 14 801 6 1
-./main eucore_A4 14 808 6 1
-./main eucore_A4 14 842 6 1
-
-
-./main amazon_A4 6 509 6 1
-./main amazon_A4 6 154 6 1
-./main amazon_A4 6 124 6 1
-./main amazon_A4 6 135 6 1
-
-./main amazon_A4 8 509 6 1
-./main amazon_A4 8 154 6 1
-./main amazon_A4 8 124 6 1
-./main amazon_A4 8 135 6 1
-
-./main amazon_A4 12 509 6 1
-./main amazon_A4 12 154 6 1
-./main amazon_A4 12 124 6 1
-./main amazon_A4 12 135 6 1
-
-./main amazon_A4 14 509 6 1
-./main amazon_A4 14 154 6 1
-./main amazon_A4 14 124 6 1
-./main amazon_A4 14 135 6 1
-
-
-
-
-# vary gamma
-
-./main eucore_A4 10 800 6 10
-./main eucore_A4 10 801 6 10
-./main eucore_A4 10 808 6 10
-./main eucore_A4 10 842 6 10
-
-
-./main amazon_A4 10 509 6 10
-./main amazon_A4 10 154 6 10
-./main amazon_A4 10 124 6 10
-./main amazon_A4 10 135 6 10
-
-./main eucore_A4 10 800 6 20
-./main eucore_A4 10 801 6 20
-./main eucore_A4 10 808 6 20
-./main eucore_A4 10 842 6 20
-
-./main amazon_A4 10 509 6 20
-./main amazon_A4 10 154 6 20
-./main amazon_A4 10 124 6 20
-./main amazon_A4 10 135 6 20
-
-./main eucore_A4 10 800 6 30
-./main eucore_A4 10 801 6 30
-./main eucore_A4 10 808 6 30
-./main eucore_A4 10 842 6 30
-
-./main amazon_A4 10 509 6 30
-./main amazon_A4 10 154 6 30
-./main amazon_A4 10 124 6 30
-./main amazon_A4 10 135 6 30
-
-./main eucore_A4 10 800 6 40
-./main eucore_A4 10 801 6 40
-./main eucore_A4 10 808 6 40
-./main eucore_A4 10 842 6 40
-
-./main amazon_A4 10 509 6 40
-./main amazon_A4 10 154 6 40
-./main amazon_A4 10 124 6 40
-./main amazon_A4 10 135 6 40
-
-
-
-
-
-
-
-
-./main facebook_A4 10 239 6 30
-./main facebook_A4 10 249 6 30
-./main facebook_A4 10 325 6 30
-./main facebook_A4 10 335 6 30
-
-./main dblp_A4 10 385 6 30
-./main dblp_A4 10 697 6 30
-./main dblp_A4 10 801 6 30
-./main dblp_A4 10 982 6 30
-
-./main LiveJournal_A4 10 206 6 30
-./main LiveJournal_A4 10 243 6 30
-./main LiveJournal_A4 10 285 6 30
-./main LiveJournal_A4 10 353 6 30
-
-./main facebook_A4 10 239 6 40
-./main facebook_A4 10 249 6 40
-./main facebook_A4 10 325 6 40
-./main facebook_A4 10 335 6 40
-
-
-./main dblp_A4 10 385 6 40
-./main dblp_A4 10 697 6 40
-./main dblp_A4 10 801 6 40
-./main dblp_A4 10 982 6 40
-
-
-./main LiveJournal_A4 10 206 6 40
-./main LiveJournal_A4 10 243 6 40
-./main LiveJournal_A4 10 285 6 40
-./main LiveJournal_A4 10 353 6 40
-
-
-
-
-
-
-
-
-
-
-
-# vary theta
-
-./main wiki_A4 6 1259 6 1
-./main wiki_A4 6 1272 6 1
-
-./main wiki_A4 8 1259 6 1
-./main wiki_A4 8 1272 6 1
-
-./main wiki_A4 12 1259 6 1
-./main wiki_A4 12 1272 6 1
-
-./main wiki_A4 14 1259 6 1
-./main wiki_A4 14 1272 6 1
-
-
 # vary attribute size
-./main wiki_A4 10 1259 2 1
-./main wiki_A4 10 1272 2 1
+./main wiki_A4 10 364788 10 1
+./main wiki_A4 10 409642 10 1
 
-./main wiki_A4 10 1259 4 1
-./main wiki_A4 10 1272 4 1
+./main wiki_A4 10 364788 2 1
+./main wiki_A4 10 409642 2 1
 
-./main wiki_A4 10 1259 6 1
-./main wiki_A4 10 1272 6 1
+./main wiki_A4 10 364788 4 1
+./main wiki_A4 10 409642 4 1
 
-./main wiki_A4 10 1259 8 1
-./main wiki_A4 10 1272 8 1
+./main wiki_A4 10 364788 6 1
+./main wiki_A4 10 409642 6 1
 
-./main wiki_A4 10 1259 10 1
-./main wiki_A4 10 1272 10 1
+./main wiki_A4 10 364788 8 1
+./main wiki_A4 10 409642 8 1
+
+
+# vary theta
+
+./main wiki_A4 6 364788 6 1
+./main wiki_A4 6 409642 6 1
+
+./main wiki_A4 8 364788 6 1
+./main wiki_A4 8 409642 6 1
+
+./main wiki_A4 12 364788 6 1
+./main wiki_A4 12 409642 6 1
+
+./main wiki_A4 14 364788 6 1
+./main wiki_A4 14 409642 6 1
+
+
 
 
 # vary gamma
-./main wiki_A4 10 276 6 10
-./main wiki_A4 10 349 6 10
+./main wiki_A4 10 364788 6 10
+./main wiki_A4 10 409642 6 10
 
-./main wiki_A4 10 276 6 20
-./main wiki_A4 10 349 6 20
+./main wiki_A4 10 364788 6 20
+./main wiki_A4 10 409642 6 20
 
-./main wiki_A4 10 276 6 30
-./main wiki_A4 10 349 6 30
+./main wiki_A4 10 364788 6 30
+./main wiki_A4 10 409642 6 30
 
-./main wiki_A4 10 276 6 40
-./main wiki_A4 10 349 6 40
+./main wiki_A4 10 364788 6 40
+./main wiki_A4 10 409642 6 40
 
 
 
