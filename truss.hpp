@@ -169,12 +169,6 @@ void truss_decomposition()
             max_trussness = max(max_trussness, tau[u]);
         }
     }
-    
-    // for(int u = 1;u <= n;u++) {
-    //     if(tau[u] <= max_trussness * 0.15 + 4 && tau[u] >= max_trussness * 0.15 - 5) {
-    //         cerr << u << "\n";
-    //     }
-    // }
 }
 
 #endif
