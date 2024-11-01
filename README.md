@@ -294,3 +294,50 @@ g++ main.cpp -o main
 ./main amazon_A4 10 154 8 1
 ./main amazon_A4 10 124 8 1
 ./main amazon_A4 10 135 8 1
+
+
+./main wiki_A4 10 364788 10 1
+./main wiki_A4 10 409642 10 1
+
+./main wiki_A4 10 364788 2 1
+./main wiki_A4 10 409642 2 1
+
+./main wiki_A4 10 364788 4 1
+./main wiki_A4 10 409642 4 1
+
+./main wiki_A4 10 364788 6 1
+./main wiki_A4 10 409642 6 1
+
+./main wiki_A4 10 364788 8 1
+./main wiki_A4 10 409642 8 1
+
+
+# vary theta
+
+./main wiki_A4 6 364788 6 1
+./main wiki_A4 6 409642 6 1
+
+./main wiki_A4 8 364788 6 1
+./main wiki_A4 8 409642 6 1
+
+./main wiki_A4 12 364788 6 1
+./main wiki_A4 12 409642 6 1
+
+./main wiki_A4 14 364788 6 1
+./main wiki_A4 14 409642 6 1
+
+
+
+
+# vary gamma
+./main wiki_A4 10 364788 6 10
+./main wiki_A4 10 409642 6 10
+
+./main wiki_A4 10 364788 6 20
+./main wiki_A4 10 409642 6 20
+
+./main wiki_A4 10 364788 6 30
+./main wiki_A4 10 409642 6 30
+
+./main wiki_A4 10 364788 6 40
+./main wiki_A4 10 409642 6 40

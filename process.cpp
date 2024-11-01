@@ -79,7 +79,7 @@ void core_decomposition() {
             int cnt50 = 0;
             cout << "max coreness : " << max_core << endl;
             for(int i = 1;i <= n;i++) {
-                if(core[i] <= max_core * 0.85 + 2 && core[i] >= max_core * 0.85) {
+                if(core[i] <= max_core * 0.25 + 2 && core[i] >= max_core * 0.25) {
                     cout << i << endl;
                 }
             }   
@@ -91,8 +91,8 @@ void core_decomposition() {
 
 
 int main() {
-    freopen("../Dataset/wiki_A4/wiki_A4.txt", "r", stdin);
-    freopen("../Dataset/wiki_A4/wiki_A4_processed.txt", "w", stdout);
+    freopen("../Dataset/Orkut_A4/Orkut_A4.txt", "r", stdin);
+    freopen("../Dataset/Orkut_A4/Orkut_A4_processed.txt", "w", stdout);
     cin >> n >> m;
     // cout << n << " " <<  m << endl;
     for(int i = 1;i <= m;i++) {
