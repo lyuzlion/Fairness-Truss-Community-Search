@@ -143,8 +143,13 @@ Graph FTCS() {
                 }
             }
         }
-        sort(C.V.begin(), C.V.end(), [] (const int &v1, const int &v2) -> bool {
-            return (dis[v1] != dis[v2]) ?  (dis[v1] > dis[v2]) : (v1 > v2);
+        int attr_sum2[maxa + 5];
+        memset(attr_sum2, 0, sizeof(attr_sum2));
+        for(const int v : C.V) {
+            attr_sum2[phi[v]]++;
+        }
+        sort(C.V.begin(), C.V.end(), [&attr_sum2] (const int &v1, const int &v2) -> bool {
+            return (dis[v1] != dis[v2]) ?  (dis[v1] > dis[v2]) : (attr_sum2[phi[v1]] > attr_sum2[phi[v2]]);
         });
 
         clock_t t2 = clock();
@@ -320,7 +325,14 @@ int main(int argc, char * argv[])
 
     cerr << "Reading finished." << endl;
 
+
+    // result = freopen(("../Dataset/"+ dataset + "/att.txt").c_str(), "r", stdin);
+    // if (result == NULL) {
+    //     cerr << "No such file!\n";
+    //     return -1;
+    // }
     for(int i = 1;i <= n;i++) { 
+        // int xx;cin >> xx;
         // cin >> phi[i];
         phi[i] = get_rand(0, attr_range - 1);
         attr_set.insert(phi[i]);

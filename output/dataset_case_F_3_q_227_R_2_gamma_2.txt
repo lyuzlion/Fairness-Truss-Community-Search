@@ -1,0 +1,3 @@
+k : 8
+Overall running time: 0.094668s.
+diameter : 2
