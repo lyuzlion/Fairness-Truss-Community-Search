@@ -169,8 +169,8 @@ int compute_diam(Graph &C) {
         }
         for(const int & t : C.V) diam = max(diam, dis[t]);
     }
-    for(const int & t : C.V) cout << t << " ";
-    cout << endl;
+    // for(const int & t : C.V) cout << t << " ";
+    // cout << endl;
     return diam;
 }
 

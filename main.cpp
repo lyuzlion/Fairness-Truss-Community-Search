@@ -18,7 +18,9 @@ Graph FTCS() {
     ret.query_dis = 0x3f3f3f3f;
     int lk = 2, rk = tau[q] + 1, k;
     while(lk < rk) {
+    // for (int i = 2;i <= tau[q];i++) {
         k = (lk + rk) >> 1;
+        // k = i;
         tmp.V.clear();
         memset(vis, false, sizeof(vis));
 
@@ -52,7 +54,11 @@ Graph FTCS() {
             lk = k + 1;
             C.V.clear();
             for(const int x : tmp.V) C.V.push_back(x);
-        } else rk = k;
+        } else {
+            rk = k;
+            // k--;
+            // break;
+        }
         // cerr << "fairness:" << F * (int) attr_set.size() << '\n';
     }
     k = lk - 1;
@@ -89,6 +95,9 @@ Graph FTCS() {
     };
     sort(C.V.begin(), C.V.end(), cmp);
     cerr << "C.V size: " << C.V.size() << '\n';
+    if(C.V.size() >= 10000) {
+        assert(0);
+    }
     unordered_set<int> A[maxn];
 
     for (int i = 0; i < C.V.size(); i++)
@@ -276,7 +285,7 @@ int main(int argc, char * argv[])
     cout.tie(0);
 
     if(argc != 6) {
-        cerr << "Usage: ./main dataset F q attr_range gamma\n";
+        cerr << "Usage: ./main <dataset> <F> <q> <attr_range> <gamma>\n";
         return -1;
     }
 
@@ -309,7 +318,11 @@ int main(int argc, char * argv[])
     {
         cin >> E[i].u >> E[i].v;
         if(i % 200000 == 0) cerr << "Reading edge " << fixed << setprecision(4) << 100.0 * i / m << "%.\n";
+        if(E[i].u == E[i].v)
+            cerr << "Self loop!\n";
         assert(E[i].u != E[i].v);
+        if(hash_table_1.count(1ll * E[i].u * n + E[i].v)) continue;
+        if(hash_table_1.count(1ll * E[i].v * n + E[i].u)) continue;
         hash_table_1[1ll * E[i].u * n + E[i].v] = i;
         hash_table_1[1ll * E[i].v * n + E[i].u] = i;
         hash_table_2[1ll * E[i].u * n + E[i].v] = i;
