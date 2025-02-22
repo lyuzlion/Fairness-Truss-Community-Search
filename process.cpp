@@ -68,20 +68,14 @@ void core_decomposition() {
             for(int i = 1;i <= n;i++) {
                 max_core = max(max_core, core[i]);
             }
-            int cnt4 = 0;
-            int cnt5 = 0;
-            int cnt6 = 0;
-            int cnt7 = 0;
-            int cnt8 = 0;
-            int cnt9 = 0;
-            int cnt10 = 0;
-            int cnt11 = 0;
-            int cnt50 = 0;
+
             cout << "max coreness : " << max_core << endl;
             for(int i = 1;i <= n;i++) {
-                if(core[i] <= max_core * 0.15+1 && core[i] >= max_core * 0.15) {
-                    cout << i << " " << core[i] << endl;
-                }
+                // if(core[i] >= max_core * 0.75 && core[i] <= ceil(max_core * 0.85)) {
+                // if(core[i] >= max_core * 0.25 && core[i] <= ceil(max_core * 0.55)) {
+                    if(core[i] >= 20)cout << i << " " << core[i] << endl;
+                    // cout << i  << endl;
+                // }
             }   
             return;
         }
@@ -91,8 +85,8 @@ void core_decomposition() {
 
 
 int main() {
-    freopen("../Dataset/subdblp80/subdblp80.txt", "r", stdin);
-    freopen("../Dataset/subdblp80/subdblp80_processed.txt", "w", stdout);
+    freopen("./Dataset/extdblp/extdblp.txt", "r", stdin);
+    freopen("./Dataset/extdblp/extdblp_processed.txt", "w", stdout);
     cin >> n >> m;
     // cout << n << " " <<  m << endl;
     for(int i = 1;i <= m;i++) {

@@ -1,64 +1,251 @@
 g++ main.cpp -o main
 
-./main subdblp60 10 2050 6 20
-./main subdblp70 10 24676 6 20
-./main subdblp70 10 26928 6 20
-./main subdblp70 10 27816 6 20
-./main subdblp70 10 28240 6 20
-./main subdblp70 10 29879 6 20
-./main subdblp70 10 30159 6 20
-./main subdblp80 10 4104 6 20
-./main subdblp80 10 6468 6 20
-./main subdblp80 10 18381 6 20
-./main subdblp80 10 82727 6 20
-./main subdblp80 10 117052 6 20
-./main subdblp80 10 152602 6 20
-./main subdblp80 10 241869 6 20
-./main subdblp90 10 5679 6 20
-./main subdblp90 10 5695 6 20
-./main subdblp90 10 6859 6 20
-./main subdblp90 10 7518 6 20
-./main subdblp90 10 7820 6 20
-./main subdblp90 10 7935 6 20
-./main subdblp90 10 18584 6 20
-./main subdblp90 10 21057 6 20
-./main subdblp90 10 21484 6 20
-./main subdblp90 10 22322 6 20
+./main dblp_A4 6 47393 6 1
+./main dblp_A4 6 88307 6 1
+./main dblp_A4 6 183672 6 1
+./main dblp_A4 6 236420 6 1
+./main dblp_A4 6 278718 6 1
 
-# ./main subdblp70 10 24676 6 1
-# ./main subdblp70 10 24773 6 1
-# ./main subdblp70 10 25633 6 1
-# ./main subdblp70 10 26928 6 1
-# ./main subdblp70 10 27816 6 1
-# ./main subdblp70 10 28240 6 1
-# ./main subdblp70 10 28969 6 1
-# ./main subdblp70 10 29217 6 1
-# ./main subdblp70 10 29681 6 1
-# ./main subdblp70 10 29879 6 1
-# ./main subdblp70 10 30159 6 1
+./main dblp_A4 8 47393 6 1
+./main dblp_A4 8 88307 6 1
+./main dblp_A4 8 183672 6 1
+./main dblp_A4 8 236420 6 1
+./main dblp_A4 8 278718 6 1
+
+./main dblp_A4 10 47393 6 1
+./main dblp_A4 10 88307 6 1
+./main dblp_A4 10 183672 6 1
+./main dblp_A4 10 236420 6 1
+./main dblp_A4 10 278718 6 1
+
+./main dblp_A4 12 47393 6 1
+./main dblp_A4 12 88307 6 1
+./main dblp_A4 12 183672 6 1
+./main dblp_A4 12 236420 6 1
+./main dblp_A4 12 278718 6 1
+
+./main dblp_A4 14 47393 6 1
+./main dblp_A4 14 88307 6 1
+./main dblp_A4 14 183672 6 1
+./main dblp_A4 14 236420 6 1
+./main dblp_A4 14 278718 6 1
 
 
-# ./main subdblp80 10 55722 6 1
-# ./main subdblp80 10 55929 6 1
-# ./main subdblp80 10 55940 6 1
-# ./main subdblp80 10 56038 6 1
-# ./main subdblp80 10 56130 6 1
-# ./main subdblp80 10 292725 6 1
-# ./main subdblp80 10 292731 6 1
-# ./main subdblp80 10 358518 6 1
-# ./main subdblp80 10 359043 6 1
-# ./main subdblp80 10 360425 6 1
-# ./main subdblp80 10 2275518 6 1
 
 
-# ./main subdblp90 10 5679 6 1
-# ./main subdblp90 10 5695 6 1
-# ./main subdblp90 10 6859 6 1
-# ./main subdblp90 10 7518 6 1
-# ./main subdblp90 10 7820 6 1
-# ./main subdblp90 10 7935 6 1
-# ./main subdblp90 10 18584 6 1
-# ./main subdblp90 10 21057 6 1
-# ./main subdblp90 10 21484 6 1
-# ./main subdblp90 10 22322 6 1
-# ./main subdblp90 10 22535 6 1
+
+
+
+
+
+
+
+
+./main dblp_A4 6 47393 6 20
+./main dblp_A4 6 88307 6 20
+./main dblp_A4 6 183672 6 20
+./main dblp_A4 6 236420 6 20
+./main dblp_A4 6 278718 6 20
+
+./main dblp_A4 8 47393 6 20
+./main dblp_A4 8 88307 6 20
+./main dblp_A4 8 183672 6 20
+./main dblp_A4 8 236420 6 20
+./main dblp_A4 8 278718 6 20
+
+./main dblp_A4 10 47393 6 20
+./main dblp_A4 10 88307 6 20
+./main dblp_A4 10 183672 6 20
+./main dblp_A4 10 236420 6 20
+./main dblp_A4 10 278718 6 20
+
+./main dblp_A4 12 47393 6 20
+./main dblp_A4 12 88307 6 20
+./main dblp_A4 12 183672 6 20
+./main dblp_A4 12 236420 6 20
+./main dblp_A4 12 278718 6 20
+
+./main dblp_A4 14 47393 6 20
+./main dblp_A4 14 88307 6 20
+./main dblp_A4 14 183672 6 20
+./main dblp_A4 14 236420 6 20
+./main dblp_A4 14 278718 6 20
+
+
+
+
+
+
+
+
+
+./main facebook_A4 6 484 6 1
+./main facebook_A4 6 2477 6 1
+./main facebook_A4 6 3343 6 1
+./main facebook_A4 6 1825 6 1
+./main facebook_A4 6 1010 6 1
+
+./main facebook_A4 8 484 6 1
+./main facebook_A4 8 2477 6 1
+./main facebook_A4 8 3343 6 1
+./main facebook_A4 8 1825 6 1
+./main facebook_A4 8 1010 6 1
+
+./main facebook_A4 10 484 6 1
+./main facebook_A4 10 2477 6 1
+./main facebook_A4 10 3343 6 1
+./main facebook_A4 10 1825 6 1
+./main facebook_A4 10 1010 6 1
+
+./main facebook_A4 12 484 6 1
+./main facebook_A4 12 2477 6 1
+./main facebook_A4 12 3343 6 1
+./main facebook_A4 12 1825 6 1
+./main facebook_A4 12 1010 6 1
+
+./main facebook_A4 14 484 6 1
+./main facebook_A4 14 2477 6 1
+./main facebook_A4 14 3343 6 1
+./main facebook_A4 14 1825 6 1
+./main facebook_A4 14 1010 6 1
+
+
+
+
+
+
+
+
+
+
+./main facebook_A4 6 484 6 20
+./main facebook_A4 6 2477 6 20
+./main facebook_A4 6 3343 6 20
+./main facebook_A4 6 1825 6 20
+./main facebook_A4 6 1010 6 20
+
+./main facebook_A4 8 484 6 20
+./main facebook_A4 8 2477 6 20
+./main facebook_A4 8 3343 6 20
+./main facebook_A4 8 1825 6 20
+./main facebook_A4 8 1010 6 20
+
+./main facebook_A4 10 484 6 20
+./main facebook_A4 10 2477 6 20
+./main facebook_A4 10 3343 6 20
+./main facebook_A4 10 1825 6 20
+./main facebook_A4 10 1010 6 20
+
+./main facebook_A4 12 484 6 20
+./main facebook_A4 12 2477 6 20
+./main facebook_A4 12 3343 6 20
+./main facebook_A4 12 1825 6 20
+./main facebook_A4 12 1010 6 20
+
+./main facebook_A4 14 484 6 20
+./main facebook_A4 14 2477 6 20
+./main facebook_A4 14 3343 6 20
+./main facebook_A4 14 1825 6 20
+./main facebook_A4 14 1010 6 20
+
+
+# ./main subdeezer60 10 6669 2 1
+# ./main subdeezer60 10 18534 2 1
+# ./main subdeezer60 10 19087 2 1
+# ./main subdeezer60 10 26313 2 1
+
+
+# ./main subdeezer70 10 12258 2 1
+# ./main subdeezer70 10 17848 2 1
+# ./main subdeezer70 10 19087 2 1
+# ./main subdeezer70 10 23933 2 1
+
+
+# ./main subdeezer80 10 4627 2 1
+# ./main subdeezer80 10 13757 2 1
+# ./main subdeezer80 10 21689 2 1
+# ./main subdeezer80 10 25637 2 1
+
+
+# ./main subdeezer90 10 12793 2 1
+# ./main subdeezer90 10 21124 2 1
+# ./main subdeezer90 10 24006 2 1
+# ./main subdeezer90 10 8847 2 1
+
+
+
+
+
+
+
+
+
+# ./main subdeezer60 10 6669 2 20
+# ./main subdeezer60 10 18534 2 20
+# ./main subdeezer60 10 19087 2 20
+# ./main subdeezer60 10 26313 2 20
+
+
+# ./main subdeezer70 10 12258 2 20
+# ./main subdeezer70 10 17848 2 20
+# ./main subdeezer70 10 19087 2 20
+# ./main subdeezer70 10 23933 2 20
+
+
+# ./main subdeezer80 10 4627 2 20
+# ./main subdeezer80 10 13757 2 20
+# ./main subdeezer80 10 21689 2 20
+# ./main subdeezer80 10 25637 2 20
+
+
+# ./main subdeezer90 10 12793 2 20
+# ./main subdeezer90 10 21124 2 20
+# ./main subdeezer90 10 24006 2 20
+# ./main subdeezer90 10 8847 2 20
+
+
+
+
+
+
+
+
+# ./main subgame70 10 1238 2 1
+# ./main subgame70 10 56395 2 1
+# ./main subgame70 10 105583 2 1
+# ./main subgame70 10 146152 2 1
+
+# ./main subgame70 10 1238 2 20
+# ./main subgame70 10 56395 2 20
+# ./main subgame70 10 105583 2 20
+# ./main subgame70 10 146152 2 20
+
+
+
+
+# ./main subgame80 10 28732 2 1
+# ./main subgame80 10 56646 2 1
+# ./main subgame80 10 90740 2 1
+# ./main subgame80 10 138169 2 1
+
+# ./main subgame80 10 28732 2 20
+# ./main subgame80 10 56646 2 20
+# ./main subgame80 10 90740 2 20
+# ./main subgame80 10 138169 2 20
+
+
+
+
+# ./main subgame90 10 64739 2 1
+# ./main subgame90 10 95763 2 1
+# ./main subgame90 10 119267 2 1
+# ./main subgame90 10 150367 2 1
+
+# ./main subgame90 10 64739 2 20
+# ./main subgame90 10 95763 2 20
+# ./main subgame90 10 119267 2 20
+# ./main subgame90 10 150367 2 20
+
+
+
+
