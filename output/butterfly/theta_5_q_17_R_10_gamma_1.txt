@@ -1,6 +1,0 @@
-k : 5
-Overall running time: 1.88601s.
-diameter : 7
-max_attr : 94
-min_attr : 5
-attribute delta : 89

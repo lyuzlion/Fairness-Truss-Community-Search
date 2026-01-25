@@ -1,7 +1,0 @@
-k : 6
-Overall running time: 0.104232s.
-diameter : 3
-max_attr : 12
-min_attr : 10
-attribute delta : 2
-case study
